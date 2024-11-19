@@ -1,23 +1,26 @@
 {
-	"name": "website",
-	"version": "0.0.1",
-	"private": true,
-	"scripts": {
-		"dev": "vite dev",
-		"build": "vite build",
-		"preview": "vite preview",
-		"test": "vite preview --port 80"
-	},
-	"type": "module",
-	"dependencies": {
-		"@splinetool/runtime": "^0.9.496",
-		"@sveltejs/adapter-auto": "^3.1.1",
-		"@sveltejs/kit": "^2.5.0",
-		"css-doodle": "^0.37.3",
-		"mdsvex": "^0.11.0",
-		"postcss": "^8.4.31",
-		"serve": "^14.2.0",
-		"simple-icons": "^8.15.0",
-		"svelte": "^4.2.19"
-	}
+  "name": "website",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "devhost": "astro dev --host",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.4",
+    "@astrojs/mdx": "^3.1.9",
+    "@astrojs/rss": "^4.0.9",
+    "@astrojs/sitemap": "^3.2.1",
+    "@astrojs/svelte": "^6.0.1",
+    "@astrojs/tailwind": "^5.1.2",
+    "astro": "^4.16.13",
+    "lucide-astro": "^0.460.0",
+    "simple-icons": "^13.17.0",
+    "svelte": "^5.2.3",
+    "tailwindcss": "^3.4.15",
+    "typescript": "^5.6.3"
+  }
 }
