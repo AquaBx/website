@@ -10,6 +10,8 @@ const {post} = Astro.props
       <h5 class="text-2xl font-bold tracking-tight text-primary-900 pb-2">
         {post.data.name}
       </h5>
+      {post.data.location && <h4 class="text-sm">{post.data.location}</h4>}
+
       {post.data.repository ? (
         <a target="blank" 
           class="text-sm text-primary-500 hover:underline"
@@ -34,12 +36,14 @@ const {post} = Astro.props
 
     {/* {[(post.render()).Content].map((Poste)=>{return Poste ?  <Poste></Poste> : ""})} */}
     <div class="block">
-      {post.data.tags.map((t: string) => {
+      {post.data.tags && post.data.tags.sort().map((t: string) => {
         return <Tag icon={t} />;
       })}
     </div>
 
     <p class="text-xs m-0 mt-4 text-gray-900">
-      Creation : <FormattedDate date={post.data.startDate} />
+      { (post.data.startDate && post.data.endDate) && <p>From <FormattedDate date={post.data.startDate} /> to <FormattedDate date={post.data.endDate} /> </p> }
+      { (post.data.startDate && !post.data.endDate) && <p>Since <FormattedDate date={post.data.startDate} /></p> }
+      { (!post.data.startDate && post.data.endDate) && <p>Until <FormattedDate date={post.data.endDate} /></p> }
     </p>
   </div>
