@@ -1,0 +1,25 @@
+{
+	"$schema": "https://inlang.com/schema/inlang-message-format",
+	"description": "I am Tom Chauvel and I am {age} years old. Since my childhood I've been interested in science, especially computer science. To graduate in this field, I have been studying at the ESIR since 2021, at the University of Rennes (my heart's city).",
+	"home": "Home",
+	"projects": "Projects",
+	"gallery": "Gallery",
+	"cv": "CV",
+	"today": "Today",
+	"month": [
+		{
+			"declarations": [
+				"input count",
+				"local countPlural = count: plural"
+			],
+			"selectors": [
+				"countPlural"
+			],
+			"match": {
+				"countPlural=one": "1 month",
+				"countPlural=other": "{count} months"
+			}
+		}
+	],
+	"title": "Tom Chauvel"
+}

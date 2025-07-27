@@ -1,0 +1,273 @@
+[
+    {
+        "name": {
+            "en": "Banque Alimentaire",
+            "fr": "Banque Alimentaire"
+        },
+        "location": "35740 Pacé, France",
+        "dates": [
+            {
+                "start": "2019",
+                "end": "2019"
+            }
+        ],
+        "type": "volunteering"
+    },
+    {
+        "name": {
+            "en": "Euro Basket",
+            "fr": "Euro Basket"
+        },
+        "location": "35740 Pacé, France",
+        "dates": [
+            {
+                "start": "2020",
+                "end": "2020"
+            }
+        ],
+        "type": "volunteering"
+    },
+    {
+        "name": {
+            "en": "Marathon Vert",
+            "fr": "Marathon Vert"
+        },
+        "location": "35000 Rennes, France",
+        "dates": [
+            {
+                "start": "Oct 2021",
+                "end": "Oct 2021"
+            }
+        ],
+        "type": "volunteering"
+    },
+    {
+        "name": {
+            "fr": "Technicien informatique (stagiaire)",
+            "en": "IT Assistant Internship"
+        },
+        "dates": [
+            {
+                "start": "2024-07-01",
+                "end": "2024-08-31"
+            },
+            {
+                "start": "2022-06-01",
+                "end": "2022-06-30"
+            }
+        ],
+        "location": "Mairie de Pacé | 35740 Pacé, France",
+        "description": {
+            "en": "Modernization of IT infrastructure\n• Installed PRTG (infrastructure monitoring)\n• Installed GLPI (ticket tracking for technical support)\n• Updated servers\n• Set up new workstations (Windows, Office 365)\n• Managed thin clients\n• Configured switches",
+            "fr": "Modernisation de l’infrastructure informatique\n• Mise en place de PRTG, améliorant la surveillance de plus de 50 équipements réseau en temps réel\n• Mise en place de GLPI pour centraliser la gestion des tickets IT de plus de 100 agents municipaux\n• Mise à jour de serveurs Windows \n• Installation d'une dizaine de nouveaux postes informatiques (Windows, Office 365)\n• Gestion et maintenance d'environ 40 clients légers.\n• Configuration de 7 nouveaux switchs réseau Aruba"
+        },
+        "type": "work",
+        "tags": [
+            "IT",
+            "Internship"
+        ]
+    },
+    {
+        "name": {
+            "en": "Data Analyst Internship",
+            "fr": "Data Analyst (stagiaire)"
+        },
+        "dates": [
+            {
+                "start": "Jul 15 2025"
+            }
+        ],
+        "location": "Inria | 35000 Rennes, France",
+        "description": {
+            "en": "",
+            "fr": "Utilisation du clustering et de mesures de similarité pour regrouper les empreintes de navigateur et identifier les utilisateurs."
+        },
+        "type": "work"
+    },
+    {
+        "name": {
+            "en": "Chief Technology Officer",
+            "fr": "Chief Technology Officer"
+        },
+        "homepage": "https://isati.org",
+        "dates": [
+            {
+                "start": "Mar 1 2024",
+                "end": "Apr 30 2025"
+            }
+        ],
+        "location": "ISATI | 35000 Rennes, France",
+        "description": {
+            "en": "Mainly responsible for managing websites and Google Workspace",
+            "fr": "Gestion des sites web à destination des 500 étudiants de l'école et administration du Google Workspace pour les 40 membres du BDE"
+        },
+        "type": "work",
+        "tags": [
+            "CTO",
+            "Bénévolat"
+        ]
+    },
+    {
+        "name": {
+            "en": "Order Picker",
+            "fr": "Préparateur de commande (intérimaire)"
+        },
+        "dates": [
+            {
+                "start": "Jul 1 2022",
+                "end": "Dec 31 2022"
+            }
+        ],
+        "location": "CERP Bretagne Atlantique | 35760 Saint-Grégoire, France",
+        "description": {
+            "en": "Preparation and packaging of pharmaceutical products before shipment. (Préparation et conditionnement de produits pharmaceutiques avant expédition.)",
+            "fr": "Préparation et conditionnement de produits pharmaceutiques avant expédition."
+        },
+        "type": "work",
+        "tags": [
+            "Order picker",
+            "Fixed-term contract"
+        ]
+    },
+    {
+        "name": {
+            "en": "Break the Code",
+            "fr": "Break the Code"
+        },
+        "location": "SopraSteria | 35000 Rennes, France",
+        "dates": [
+            {
+                "start": "Nov 28 2024",
+                "end": "Nov 28 2024"
+            }
+        ],
+        "type": "contest"
+    },
+    {
+        "name": {
+            "en": "Battle Dev",
+            "fr": "Battle Dev"
+        },
+        "location": "Thales | 35000 Rennes, France",
+        "dates": [
+            {
+                "start": "Oct 15 2024",
+                "end": "Oct 15 2024"
+            }
+        ],
+        "type": "contest"
+    },
+    {
+        "name": {
+            "en": "Technical Challenge",
+            "fr": "Challenge Technique"
+        },
+        "location": "Coexya | 35000 Rennes, France",
+        "dates": [
+            {
+                "start": "Mar 1 2024",
+                "end": "Mar 1 2024"
+            }
+        ],
+        "type": "contest"
+    },
+    {
+        "name": {
+            "en": "GameJam",
+            "fr": "GameJam"
+        },
+        "location": "ESIR | 35000 Rennes, France",
+        "dates": [
+            {
+                "start": "Apr 2025",
+                "end": "Apr 2025"
+            },
+            {
+                "start": "Apr 2024",
+                "end": "Apr 2024"
+            }
+        ],
+        "type": "contest"
+    },
+    {
+        "name": {
+            "en": "Engineering School",
+            "fr": "Ecole d'ingénieur"
+        },
+        "description": {
+            "en": "",
+            "fr": "• Développement Fullstack (Angular + nestjs)\n• Design et modélisation logicielle\n• Complexité algorithmique (en Java)"
+        },
+        "location": "ESIR | 35000 Rennes, France",
+        "dates": [
+            {
+                "start": "Sep 1 2023"
+            }
+        ],
+        "type": "study"
+    },
+    {
+        "name": {
+            "en": "High School",
+            "fr": "Lycée"
+        },
+        "location": "Lycée Jean Paul II | 35760 Saint Grégoire, France",
+        "dates": [
+            {
+                "start": "Sep 1 2018",
+                "end": "Jul 31 2021"
+            }
+        ],
+        "type": "study"
+    },
+    {
+        "name": {
+            "en": "Erasmus",
+            "fr": "Erasmus"
+        },
+        "location": "Politechnika Poznańska | 61-138 Poznań, Poland",
+        "dates": [
+            {
+                "start": "Mar 1 2025",
+                "end": "Jul 5 2025"
+            }
+        ],
+        "description": {
+            "en": "",
+            "fr": "• Développement Fullstack (Sveltekit, NextJS)\n• Développement application de bureau (MAUI)\n• Cybersécurité\n• Projets de groupe\n• Design et modélisation logicielle"
+        },
+        "type": "study"
+    },
+    {
+        "name": {
+            "en": "CUPGE Engineering",
+            "fr": "CUPGE Ingénieur"
+        },
+        "description": {
+            "en": "",
+            "fr": "• Python\n• Développement Fullstack (PHP)"
+        },
+        "location": "ESIR | 35000 Rennes, France",
+        "dates": [
+            {
+                "start": "Sep 1 2021",
+                "end": "Jul 1 2023"
+            }
+        ],
+        "type": "study"
+    },
+    {
+        "name": {
+            "en": "Middle School",
+            "fr": "Collège"
+        },
+        "location": "Collège Saint Gabriel | 35740 Pacé, France",
+        "dates": [
+            {
+                "start": "Sep 1 2014",
+                "end": "Jul 31 2018"
+            }
+        ],
+        "type": "study"
+    }
+]
