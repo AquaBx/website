@@ -8,6 +8,7 @@
 		HTML: icons.siHtml5,
 		React: icons.siReact,
 		Svelte: icons.siSvelte,
+		SvelteKit: icons.siSvelte,
 		VueJS: icons.siVuedotjs,
 		Tailwind: icons.siTailwindcss,
 		CSS: icons.siCss3,
@@ -28,6 +29,8 @@
 		Angular: icons.siAngular,
 		TypeORM: icons.siTypeorm,
 		NestJS: icons.siNestjs,
+		SQLite: icons.siSqlite,
+		Pocketbase: icons.siPocketbase,
 	};
 
 	let selection =

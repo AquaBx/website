@@ -1,6 +1,7 @@
 import pdfMake from "pdfmake/build/pdfmake";
 import "pdfmake/build/vfs_fonts";
-import type { Section } from "./types";
+import { m } from "$lib/paraglide/messages";
+import type { Post } from "$lib/types";
 
 
 let profile = {
@@ -30,7 +31,7 @@ function formatDateRange(start?: string, end?: string): string {
     return "";
 }
 
-function mergeCategories(projects: { [k: string]: string[] }[]): { [k: string]: string[] } {
+function mergeCategories(projects: Post[]): { [k: string]: string[] } {
     return projects.reduce((acc, curr) => {
         for (const [key, values] of Object.entries(curr.categories || {})) {
             acc[key] = Array.from(new Set([...(acc[key] || []), ...values]));
@@ -41,12 +42,11 @@ function mergeCategories(projects: { [k: string]: string[] }[]): { [k: string]: 
 
 
 
-export async function generatePDF(data: { [section: string]: Section }) {
+export async function generatePDF(contests:Post[],studies:Post[],work:Post[],volunteering:Post[], projects:Post[]) {
 
     const left: any[] = [];
     const right: any[] = [];
 
-    // 🟦 Profil
     left.push({
         image: await generateImage(profile.avatar, 0.5),
         width: 100,
@@ -98,7 +98,7 @@ export async function generatePDF(data: { [section: string]: Section }) {
     });
 
     left.push({ style: "h2", text: "Compétences" });
-    const skills = mergeCategories(data["projects"]);
+    const skills = mergeCategories(projects);
     Object.entries(skills).forEach(([key, values]) => {
         left.push([{ style: "h3", text: `${key}` }, {
             text: `${values.join(", ")}`,
@@ -107,75 +107,39 @@ export async function generatePDF(data: { [section: string]: Section }) {
         );
     });
 
-    // 🧾 Sections dynamiques (expériences, projets, etc.)
-    for (const section of Object.values(data)) {
-        if (section.every(row => !row.shown)) continue;
-
-        right.push({ style: "h2", text: section.name });
-
-        for (const row of section) {
-            if (!row.shown) continue;
-
-            right.push({ style: "h3", text: row.name });
-
-            if (row.location) {
-                right.push(
-                    {
-                        style: "p",
-                        text: [
-                            { style: "emoji", text: "📍" },
-                            { text: " " + row.location }
-                        ]
-                    }
-                );
-            }
-
-            for (const date of row.dates) {
-                right.push(
-                    {
-                        style: "p",
-                        text: [
-                            { style: "emoji", text: "📅" },
-                            { text: ` ${formatDateRange(date.start, date.end)}` }
-                        ]
-                    }
-                )
-            }
-
-            if (row.description) {
-                right.push({ style: "p", text: row.description });
-            }
-
-            if (row.categories) {
-                const categoryRows = Object.entries(row.categories).map(
-                    ([key, values]) => [{ bold: true, text: `${key} :` }, values.join(", ")]
-                );
-
-                right.push({
-                    layout: 'noBorders',
-                    style: 'tableCategories',
-                    table: {
-                        widths: [45, '*'],
-                        body: categoryRows,
-                    }
-                });
-            }
-        }
-    }
-
+    generatePost(m.work(), work,right)
+    generatePost(m.volunteering(), volunteering,right)
+    generatePost(m.contests(), contests,right)
+    generatePost(m.projects(), projects,right)
+    generatePost(m.studies(), studies,right)
+    
     const dd = {
         pageMargins: [0, 0, 0, 0],
+        background: function(currentPage, pageSize) {
+            return {
+            canvas: [
+                {
+                type: 'rect',
+                x: 0,
+                y: 0,
+                w: 212, // largeur de ta colonne gauche
+                h: pageSize.height,
+                color: '#1c2749'
+                }
+            ]
+            };
+        },
         content: [
             {
                 table: {
-                    widths: [180, '*'],
+                    widths: [200, '*'],
                     body: [
                         [
                             {
                                 stack: left,
-                                fillColor: '#3587da',
+                                // fillColor: '#1c2749',
                                 color: 'white',
-                                margin: [12, 12, 12, 12]
+                                margin: [12, 12, 12, 12],
                             },
                             {
                                 stack: right,
@@ -188,9 +152,10 @@ export async function generatePDF(data: { [section: string]: Section }) {
             }
         ],
         styles: {
-            h1: { fontSize: 14, bold: true, margin: [0, 4], alignment: 'center' },
-            h2: { fontSize: 10, bold: true, margin: [0, 2] },
-            h3: { fontSize: 8, bold: true, margin: [0, 1] },
+            h1: { fontSize: 20, bold: true, margin: [0, 4], alignment: 'center' },
+            h2: { fontSize: 14, bold: true, margin: [0, 2] },
+            h2blue: { fontSize: 14, bold: true, margin: [0, 2], color:"#1c2749" },
+            h3: { fontSize: 10, bold: true, margin: [0, 1] },
             p: { fontSize: 6, margin: [0, 2] },
             tableCategories: { fontSize: 6, margin: [0, 1] },
             profilePic: { margin: [0, 10, 0, 10] },
@@ -234,14 +199,100 @@ async function generateImage(src, r) {
     canvas.width = canvas.height = 200;
     const ctx = canvas.getContext("2d")!;
 
+    let imgWidth = canvas.width*img.width/img.height 
+    let imgHeight = canvas.height
 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.save();
     ctx.beginPath();
     ctx.arc(canvas.width * r, canvas.width * r, canvas.width * r, 0, Math.PI * 2);
     ctx.clip();
-    ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+    ctx.drawImage(img, (canvas.width-imgWidth)-80, -40, imgWidth*2, imgHeight*2);
     ctx.restore();
 
     return canvas.toDataURL("image/PNG")
+}
+
+async function generatePost(title: string, section : Post[], right) {
+        if (section.every(row => !row.shown)) return;
+
+        right.push({
+            stack: [
+                {
+                    text: title,
+                    style: "h2blue",
+                },
+                {
+                    canvas: [
+                        {
+                            type: 'line',
+                            x1: 0, y1: -4,
+                            x2: measureText(title,14), y2: -4,
+                            lineWidth: 2,
+                            lineColor: '#1c2749'
+                        }
+                    ]
+                }
+            ]
+        }
+
+        )
+
+        for (const row of section) {
+            if (!row.shown) continue;
+
+            right.push({ style: "h3", text: row.name });
+
+            if (row.location) {
+                right.push(
+                    {
+                        style: "p",
+                        text: [
+                            { style: "emoji", text: "📍" },
+                            { text: " " + row.location }
+                        ]
+                    }
+                );
+            }
+
+            for (const date of row.dates) {
+                right.push(
+                    {
+                        style: "p",
+                        text: [
+                            { style: "emoji", text: "📅" },
+                            { text: ` ${formatDateRange(date.start, date.end)}` }
+                        ]
+                    }
+                )
+            }
+
+            if (row.description) {
+                right.push({ style: "p", text: row.description });
+            }
+
+            if (row.categories) {
+                const categoryRows = [
+                    Object.keys(row.categories),
+                    Object.values(row.categories).map(el=>el.join(", "))
+                ]
+
+                right.push({
+                    style: 'tableCategories',
+                    table: {
+                        widths: categoryRows[0].map(el=>"*"),
+                        body: categoryRows,
+                    }
+                });
+            }
+        }
+}
+
+
+function measureText(text, fontSize = 12, fontFamily = 'NotoSans') {
+  const canvas = document.createElement('canvas');
+  const ctx = canvas.getContext('2d');
+  ctx.font = `${fontSize}px ${fontFamily}`;
+  const metrics = ctx.measureText(text);
+  return metrics.width;
 }

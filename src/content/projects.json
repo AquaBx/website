@@ -1,10 +1,10 @@
 [
     {
         "name": {
-            "en": "drink-app",
-            "fr": "drink-app"
+            "en": "Drink App",
+            "fr": "Drink App"
         },
-        "repository": "https://github.com/BDE-ISATI/drink-app",
+        "link": "https://github.com/BDE-ISATI/drink-app",
         "dates": [
             {
                 "start": "Jun 25 2024",
@@ -37,18 +37,20 @@
     },
     {
         "name": {
-            "en": "elek",
-            "fr": "elek"
+            "en": "Elek",
+            "fr": "Elek"
         },
-        "repository": "https://github.com/aquabx/elek",
+        "link": "https://github.com/aquabx/elek",
         "dates": [
             {
-                "start": "Apr 21 2023"
+                "start": "Apr 21 2023",
+                "end": "Jan 3 2025"
+
             }
         ],
         "categories": {
             "Langage": [
-                "JavaScript"
+                "TypeScript"
             ]
         }
     },
@@ -61,7 +63,7 @@
             "en": "Game we programmed for a school project. I mainly contributed to the physics, lighting, performance optimization, and the separation of the game and render loops (threading).",
             "fr": "Jeu qu'on a programmé pour un projet d'école. J'ai surtout contribué à la physique, la lumière, l'optimisation des performances et la séparation de la boucle de jeu et de rendu (threading)."
         },
-        "repository": "https://github.com/AquaBx/SlimeGame",
+        "link": "https://github.com/AquaBx/SlimeGame",
         "dates": [
             {
                 "start": "Oct 28 2022",
@@ -76,11 +78,10 @@
     },
     {
         "name": {
-            "en": "palette-generator",
-            "fr": "palette-generator"
+            "en": "Palette Generator",
+            "fr": "Palette Generator"
         },
-        "repository": "https://github.com/aquabx/palette-generator",
-        "homepage": "https://aquabx.github.io/palette-generator",
+        "link": "https://github.com/aquabx/palette-generator",
         "dates": [
             {
                 "start": "Nov 17 2024"
@@ -98,13 +99,14 @@
     },
     {
         "name": {
-            "en": "audio-player",
-            "fr": "audio-player"
+            "en": "Audio Player",
+            "fr": "Audio Player"
         },
-        "homepage": "https://codepen.io/AquaBx/pen/NWgKKBK",
+        "link": "https://codepen.io/AquaBx/pen/NWgKKBK",
         "dates": [
             {
-                "start": "Aug 21 2021"
+                "start": "Aug 21 2021",
+                "end": "Aug 21 2021"
             }
         ],
         "categories": {
@@ -123,10 +125,11 @@
             "fr": "Tentative de faire une application de prise de notes.",
             "en": "Attempt to make a note-taking application."
         },
-        "repository": "https://github.com/aquabx/vtNotes",
+        "link": "https://github.com/aquabx/vtNotes",
         "dates": [
             {
-                "start": "Jan 24 2023"
+                "start": "Jan 24 2023",
+                "end": "Jun 10 2023"
             }
         ],
         "categories": {
@@ -143,10 +146,10 @@
     },
     {
         "name": {
-            "en": "text-editor",
-            "fr": "text-editor"
+            "en": "Text Editor",
+            "fr": "Text Editor"
         },
-        "repository": "https://github.com/AquaBx/text-editor",
+        "link": "https://github.com/AquaBx/text-editor",
         "dates": [
             {
                 "start": "Oct 7 2024",
@@ -167,11 +170,11 @@
             "en": "Beaulieu'Camp",
             "fr": "Beaulieu'Camp"
         },
-        "repository": "https://github.com/beaulieu-camp/",
-        "homepage": "https://beaulieu-camp.github.io",
+        "link": "https://github.com/beaulieu-camp/",
         "dates": [
             {
-                "start": "Sep 26 2021"
+                "start": "Sep 26 2021",
+                "end": "Dec 13 2023"
             }
         ],
         "description": {
@@ -190,17 +193,18 @@
     },
     {
         "name": {
-            "en": "canvas-editor",
-            "fr": "canvas-editor"
+            "en": "Canvas Editor",
+            "fr": "Canvas Editor"
         },
-        "repository": "https://github.com/aquabx/canvas-editor",
+        "link": "https://github.com/aquabx/canvaseditor",
         "description": {
             "fr": "Un éditeur de Canvas (JS) pour créer des images assez facilement. Il est utilisé pour les outils de l'ISATI.",
             "en": "A Canvas (JS) editor to easily create images. It is used for ISATI tools."
         },
         "dates": [
             {
-                "start": "Jun 18 2024"
+                "start": "Jun 18 2024",
+                "end": "Sep 18 2024"
             }
         ],
         "categories": {
@@ -214,7 +218,7 @@
             "en": "Charitea",
             "fr": "Charitea"
         },
-        "repository": "https://github.com/AquaBxSchool/2024-2025-ESIR-WEB-Charitea",
+        "link": "https://github.com/AquaBxSchool/2024-2025-ESIR-WEB-Charitea",
         "dates": [
             {
                 "start": "Nov 19 2024",
@@ -244,14 +248,14 @@
     },
     {
         "name": {
-            "en": "Cours-ESIR",
-            "fr": "Cours-ESIR"
+            "en": "Cours ESIR",
+            "fr": "Cours ESIR"
         },
-        "repository": "https://github.com/Cours-ESIR/",
-        "homepage": "https://cours-esir.github.io",
+        "link": "https://github.com/Cours-ESIR/",
         "dates": [
             {
-                "start": "May 6 2022"
+                "start": "May 6 2022",
+                "end": "Dec 1 2024"
             }
         ],
         "categories": {
@@ -272,7 +276,7 @@
             "fr": "Jeu aventure puzzle fait avec Godot.",
             "en": "Adventure puzzle game made with Godot."
         },
-        "repository": "https://github.com/EndlesslyNaggingDeity",
+        "link": "https://github.com/aquabx/EndlesslyNaggingDeity",
         "dates": [
             {
                 "start": "Apr 2024",
@@ -287,11 +291,10 @@
     },
     {
         "name": {
-            "en": "isati-website",
-            "fr": "isati-website"
+            "en": "Isati Website",
+            "fr": "Site de l'Isati"
         },
-        "homepage": "https://www.isati.org",
-        "repository": "https://github.com/BDE-ISATI/isati-website",
+        "link": "https://github.com/BDE-ISATI/isati-website",
         "dates": [
             {
                 "start": "Feb 12 2024",
@@ -327,14 +330,14 @@
     },
     {
         "name": {
-            "en": "meteo",
-            "fr": "meteo"
+            "en": "Weather",
+            "fr": "Météo"
         },
-        "homepage": "https://aquabx.github.io/meteo/",
-        "repository": "https://aquabx.github.io/meteo/",
+        "link": "https://github.com/aquabx/meteo/",
         "dates": [
             {
-                "start": "Feb 2020"
+                "start": "Feb 2020",
+                "end": "Feb 2020"
             }
         ],
         "categories": {
@@ -346,14 +349,14 @@
     },
     {
         "name": {
-            "en": "projet_programmation",
-            "fr": "projet_programmation"
+            "en": "Programming Project",
+            "fr": "Projet Programmation"
         },
         "description": {
             "en": "A C++ game made as a team using SDL as the rendering engine. I mainly contributed to interactions and detection of objects around the character.",
             "fr": "Un jeu en C++ fait en équipe utilisant la SDL comme moteur de rendu. J'ai surtout contribué aux interactions et aux détections des objets autour du personnage."
         },
-        "repository": "https://github.com/AquaBx/projet_programmation",
+        "link": "https://github.com/AquaBx/projet_programmation",
         "dates": [
             {
                 "start": "May 27 2024",
@@ -371,13 +374,14 @@
     },
     {
         "name": {
-            "en": "streamkit",
-            "fr": "streamkit"
+            "en": "Streamkit",
+            "fr": "Streamkit"
         },
-        "repository": "https://github.com/AquaBx/streamkit/",
+        "link": "https://github.com/AquaBx/streamkit/",
         "dates": [
             {
-                "start": "Jul 30 2020"
+                "start": "Jul 30 2020",
+                "end": "Jan 1 2023"
             }
         ],
         "categories": {
@@ -392,18 +396,18 @@
     },
     {
         "name": {
-            "en": "Tableau-d-avancement",
-            "fr": "Tableau-d-avancement"
+            "en": "Tableau d'avancement",
+            "fr": "Tableau d'avancement"
         },
-        "repository": "https://www.github.com/aquabx/Tableau-d-avancement",
-        "homepage": "https://aquabx.github.io/Tableau-d-avancement/",
+        "link": "https://www.github.com/aquabx/Tableau-d-avancement",
         "description": {
             "fr": "Création d'un petit site du temps ou j'avais besoin de vérifier mes équations bilans en chimie.",
             "en": "Created a small website back when I needed to check my balance equations in chemistry."
         },
         "dates": [
             {
-                "start": "Feb 2020"
+                "start": "Feb 2020",
+                "end": "Feb 2020"
             }
         ],
         "categories": {
@@ -418,7 +422,7 @@
             "en": "TravelPlanner",
             "fr": "TravelPlanner"
         },
-        "repository": "https://github.com/aquabx/vtNotes",
+        "link": "https://github.com/AquaBxSchool/2025-PUT-SDS-TravelPlanner",
         "dates": [
             {
                 "start": "Mar 01 2025",
@@ -435,10 +439,6 @@
             ],
             "Database": [
                 "Pocketbase"
-            ],
-            "Rôle": [
-                "ScrumMaster",
-                "Développeur"
             ],
             "Méthodologie": [
                 "Scrum"

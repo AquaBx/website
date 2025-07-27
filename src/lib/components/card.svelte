@@ -5,6 +5,7 @@
     import Calendar from "lucide-svelte/icons/calendar";
     import MapPin from "lucide-svelte/icons/map-pin";
     import { m } from "$lib/paraglide/messages";
+    import { Link } from "lucide-svelte";
     const { element } = $props();
 
     function monthDiff(d1, d2) {
@@ -26,25 +27,20 @@
             : ''} bg-white/10 border-3 border-white/10 flex-1 my-4 py-4 *:px-4 flex flex-col rounded-2xl text-white"
     >
         <h3 class="text-2xl">
-            {@html element.name}
-            {#if element.repository}
+            {#if element.link}
                 <a
                     target="blank"
-                    class="text-sm text-primary-500 hover:underline"
-                    href={element.repository}
+                    class="hover:underline flex items-center gap-1"
+                    href={element.link}
                 >
-                    Repository ↗
+                    {@html element.name} <Link></Link>
                 </a>
-            {/if}
-            {#if element.homepage}
-                <a
-                    target="blank"
-                    class="text-sm text-blue-500 hover:underline"
-                    href={element.homepage}
-                >
-                    Homepage ↗
-                </a>
-            {/if}
+            {:else
+            }
+                    {@html element.name}
+
+                {/if}
+            
         </h3>
 
         {#if element.location}

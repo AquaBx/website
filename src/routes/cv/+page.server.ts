@@ -35,8 +35,8 @@ export async function load({ params }) {
 
 	let contests = timeline.filter(a=>a.type=="contest")
 	let studies = timeline.filter(a=>a.type=="study")
-	let companies = timeline.filter(a=>a.type=="work")
-	let associations = timeline.filter(a=>a.type=="volunteering")
+	let work = timeline.filter(a=>a.type=="work")
+	let volunteering = timeline.filter(a=>a.type=="volunteering")
 
-	return { contests,studies,companies,associations,projects }
+	return { contests,studies,work,volunteering,projects }
 }

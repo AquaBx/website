@@ -21,5 +21,9 @@
 			}
 		}
 	],
-	"title": "Tom Chauvel"
+	"title": "Tom Chauvel",
+	"work": "Expériences professionelles",
+	"volunteering": "Bénévolat",
+	"studies": "Études",
+	"contests": "Concours de programmation"
 }

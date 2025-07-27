@@ -1,6 +1,7 @@
 import { getLocale } from '$lib/paraglide/runtime.js'
 import type { Post, PostJSON } from '$lib/types'
 
+
 import fusion from "$content/timeline.json"
 
 function treat(lang: string, posts: PostJSON[]): Post[] {

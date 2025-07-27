@@ -1,63 +1,38 @@
 <script lang="ts">
+    import Button from "$lib/components/ui/button/button.svelte";
+    import { m } from "$lib/paraglide/messages";
+    import { onMount } from "svelte";
+    import AccordionCat from "./accordionCat.svelte";
 	import { generatePDF } from "./cv2";
 
-	import * as Accordion from "$lib/components/ui/accordion/index.js";
-    import Label from "$lib/components/ui/label/label.svelte";
-    import { Checkbox } from "$lib/components/ui/checkbox";
-    import type { Post } from "$lib/types";
-
 	let { data } = $props();
-	let { contests, projects, studies, companies, associations } =
-		data;
 
-	type DataKey =
-		| "contests"
-		| "projects"
-		| "studies"
-		| "companies"
-		| "associations";
+	let contests = $state(data.contests);
+	let projects = $state(data.projects);
+	let studies = $state(data.studies);
+	let work = $state(data.work);
+	let volunteering = $state(data.volunteering);
 
-	let datas: Record<DataKey, Post[]> = $state({
-		contests,studies,companies,associations,
-		projects,
-	});
+	let pdfUri: URL | undefined = $state()
 
-	let pdfUri: URL | undefined = $state(undefined);
+	let onclick = async () => {
+		pdfUri = await generatePDF(contests,studies,work,volunteering, projects) as URL
+	}
 
-	$effect(() => {
-		const fetchPDF = async () => {
-			pdfUri = await generatePDF(datas);
-		};
-		fetchPDF();
-	});
+	onMount(()=>{
+		onclick()
+	})
+
 </script>
 
-<div class="flex w-full gap-2 text-white">
+<div class="flex w-full md:flex-row flex-col-reverse gap-2 text-white">
 	<div class="flex-1">
-		{#each Object.keys(datas) as k}
-			<Accordion.Root type="single">
-				<Accordion.Item value="item-1">
-					<Accordion.Trigger>{k}</Accordion.Trigger>
-					<Accordion.Content>
-						<div class="flex flex-col gap-1">
-							{#each datas[k as DataKey] as c}
-								{@const uuid = crypto.randomUUID()}
-								<div class="flex items-center gap-1">
-									<Checkbox
-										id={uuid}
-										bind:checked={c.shown}
-										onCheckedChange={() => {
-											datas = { ...datas };
-										}}
-									></Checkbox>
-									<Label for={uuid}>{c.name}</Label>
-								</div>
-							{/each}
-						</div>
-					</Accordion.Content>
-				</Accordion.Item>
-			</Accordion.Root>
-		{/each}
+		<AccordionCat title={m.contests()} bind:data={contests}></AccordionCat>
+		<AccordionCat title={m.studies()} bind:data={studies}></AccordionCat>
+		<AccordionCat title={m.work()} bind:data={work}></AccordionCat>
+		<AccordionCat title={m.volunteering()} bind:data={volunteering}></AccordionCat>
+		<AccordionCat title={m.projects()} bind:data={projects}></AccordionCat>
+		<Button {onclick}>Generate</Button>
 	</div>
 
 	<div class="flex-3">
