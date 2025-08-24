@@ -80,9 +80,12 @@
         "location": "Inria | 35000 Rennes, France",
         "description": {
             "en": "",
-            "fr": "Utilisation du clustering et de mesures de similarité pour regrouper les empreintes de navigateur et identifier les utilisateurs."
+            "fr": "Développement d’une méthodologie pour comparer et regrouper des fingerprints de navigateurs afin d’améliorer l’anonymat des utilisateurs.\n• mise en place d'une pipeline pour traiter et générer un dataset à partir de données réelles et en suivant des contraintes (feature model)\n• application du metrics learning afin de classifier et identifier les similarités entre les données"
         },
-        "type": "work"
+        "type": "work",
+        "tags":[
+            "Machine Learning", "Python", "Pandas", "scikit-learn", "PyTorch"
+        ]
     },
     {
         "name": {
