@@ -15,6 +15,10 @@
             {m.gallery()}
 
     </a>
+<a href={localizeHref("/music")} class="border-b-4 border-white/50">
+            {m.music()}
+
+    </a>
     <a href={localizeHref("/cv")} class="border-b-4 border-white/50">
             {m.cv()}
 

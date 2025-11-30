@@ -57,6 +57,7 @@ export async function generatePDF(contests:Post[],studies:Post[],work:Post[],vol
             [{ text: profile.linkedin.value, link: profile.linkedin.url }],
             [{ text: profile.phone.value, link: profile.phone.url }],
             [{ text: profile.website.value, link: profile.website.url }],
+            [{ text: profile.rootme.value, link: profile.rootme.url }],
         ]
     });
 
