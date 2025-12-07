@@ -3,23 +3,24 @@
 
   import * as m from "$lib/paraglide/messages.js";
 
-  import { siLinkedin, siGithub, siCodepen, siFigma } from "simple-icons";
+  import { Linkedin, Github, Codepen, Figma } from "@steeze-ui/simple-icons";
+  import { Icon } from "@steeze-ui/svelte-icon";
 
   let networks = [
     {
-      icon: siLinkedin.svg,
+      icon: Linkedin,
       href: "https://linkedin.com/in/tom-chauvel",
     },
     {
-      icon: siGithub.svg,
+      icon: Github,
       href: "https://github.com/aquabx",
     },
     {
-      icon: siCodepen.svg,
+      icon: Codepen,
       href: "https://codepen.io/AquaBx/pens/public",
     },
     {
-      icon: siFigma.svg,
+      icon: Figma,
       href: "https://www.figma.com/@aquabx",
     },
   ];
@@ -56,7 +57,7 @@
             class="h-8 *:fill-white aspect-square"
             href={n.href}
           >
-            {@html n.icon}
+            <Icon src={n.icon}></Icon>
           </a>
         {/each}
       </div>
