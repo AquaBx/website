@@ -1,9 +1,10 @@
 <script lang="ts">
-	import ArrowRightIcon from "@lucide/svelte/icons/arrow-right";
 	import type { WithoutChildren } from "bits-ui";
 	import { getEmblaContext } from "./context.js";
 	import { cn } from "$lib/utils.js";
 	import { Button, type Props } from "$lib/components/ui/button/index.js";
+	import { ArrowRight } from "@steeze-ui/lucide-icons";
+	import { Icon } from "@steeze-ui/svelte-icon";
 
 	let {
 		ref = $bindable(null),
@@ -26,13 +27,13 @@
 		emblaCtx.orientation === "horizontal"
 			? "-right-12 top-1/2 -translate-y-1/2"
 			: "-bottom-12 left-1/2 -translate-x-1/2 rotate-90",
-		className
+		className,
 	)}
 	onclick={emblaCtx.scrollNext}
 	onkeydown={emblaCtx.handleKeyDown}
 	bind:ref
 	{...restProps}
 >
-	<ArrowRightIcon class="size-4" />
+	<Icon src={ArrowRight} class="size-4" />
 	<span class="sr-only">Next slide</span>
 </Button>

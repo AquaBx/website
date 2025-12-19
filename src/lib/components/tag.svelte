@@ -1,6 +1,6 @@
 <script lang="ts">
+	import { BadgeInfo } from "@steeze-ui/lucide-icons";
 	import * as icons from "@steeze-ui/simple-icons";
-	import { BadgeInfo } from "@lucide/svelte";
 	import { Icon } from "@steeze-ui/svelte-icon";
 
 	let { icon = "React" } = $props();
@@ -39,13 +39,10 @@
 	class="inline-block rounded-xl bg-white/10 text-white py-0.5 px-2.5 text-sm shadow-sm mr-2"
 >
 	<div class="flex flex-row items-center gap-1">
-		{#if mapping[icon]}
-			<div class="h-4 aspect-square fill-current">
-				<Icon src={mapping[icon]}></Icon>
-			</div>
-		{:else}
-			<BadgeInfo class="h-4 aspect-square"></BadgeInfo>
-		{/if}
+		<Icon
+			src={mapping[icon] === undefined ? BadgeInfo : mapping[icon]}
+			class="h-4 aspect-square"
+		></Icon>
 		{icon}
 	</div>
 </div>

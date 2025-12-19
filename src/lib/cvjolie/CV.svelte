@@ -1,17 +1,15 @@
 <script lang="ts">
-	import { onMount } from "svelte";
 	import CvBlock from "./CVBlock.svelte";
-
+	import { m } from "$lib/paraglide/messages";
+	import { Icon } from "@steeze-ui/svelte-icon";
 	import {
 		Github,
 		Globe,
-		Home,
-		Icon,
 		Linkedin,
 		Mail,
 		Phone,
-	} from "@lucide/svelte";
-	import { m } from "$lib/paraglide/messages";
+		House,
+	} from "@steeze-ui/lucide-icons";
 
 	let { data } = $props();
 	let { contests, projects, studies, work, volunteering, profile } = data;
@@ -122,9 +120,7 @@
 	<aside
 		class="cv-aside print:static flex flex-col items-center gap-4 bg-white border border-gray-200 rounded-2xl p-4 w-[8cm] mx-auto"
 	>
-		<div
-			class="w-32 h-32 rounded-full overflow-hidden shadow-lg"
-		>
+		<div class="w-32 h-32 rounded-full overflow-hidden shadow-lg">
 			<img
 				class="object-cover w-full h-full"
 				src={profile.avatar}
@@ -165,7 +161,7 @@
 					<span
 						class="inline-flex items-center justify-center w-4 h-4"
 					>
-						<Home size="12" />
+						<Icon src={House} class="size-4" />
 					</span>
 					<a
 						href={profile.address.url}
@@ -180,7 +176,7 @@
 					<span
 						class="inline-flex items-center justify-center w-4 h-4"
 					>
-						<Globe size="12" />
+						<Icon src={Globe} class="size-4" />
 					</span>
 					<a
 						href={profile.website.url}
@@ -195,7 +191,7 @@
 					<span
 						class="inline-flex items-center justify-center w-4 h-4"
 					>
-						<Phone size="12" />
+						<Icon src={Phone} class="size-4" />
 					</span>
 					<a href={profile.phone.url} class="hover:underline">
 						{profile.phone.value}
@@ -205,7 +201,7 @@
 					<span
 						class="inline-flex items-center justify-center w-4 h-4"
 					>
-						<Mail size="12" />
+						<Icon src={Mail} class="size-4" />
 					</span>
 					<a href={profile.email.url} class="hover:underline">
 						{profile.email.value}
@@ -215,7 +211,7 @@
 					<span
 						class="inline-flex items-center justify-center w-4 h-4"
 					>
-						<Linkedin size="12" />
+						<Icon src={Linkedin} class="size-4" />
 					</span>
 					<a
 						href={profile.linkedin.url}
@@ -230,7 +226,7 @@
 					<span
 						class="inline-flex items-center justify-center w-4 h-4"
 					>
-						<Github size="12" />
+						<Icon src={Github} class="size-4" />
 					</span>
 					<a
 						href={profile.github.url}

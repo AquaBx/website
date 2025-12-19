@@ -1,6 +1,7 @@
 <script lang="ts">
-	import { Calendar } from "@lucide/svelte";
 	import FormattedDate from "$lib/components/FormattedDate.svelte";
+	import { Calendar } from "@steeze-ui/lucide-icons";
+	import { Icon } from "@steeze-ui/svelte-icon";
 	const { post } = $props();
 </script>
 
@@ -17,7 +18,7 @@
 		<div class="flex flex-col flex-wrap gap-1 text-sky-700 text-sm">
 			{#each post.dates as d}
 				<span class="flex items-center font-mono gap-1">
-					<Calendar size="12" />
+					<Icon src={Calendar} class="size-4" />
 					{#if d.start && d.end}
 						<FormattedDate date={d.start} /> – <FormattedDate
 							date={d.end}

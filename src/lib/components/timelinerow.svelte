@@ -1,42 +1,41 @@
 <script lang="ts">
-    import HandHeart from "lucide-svelte/icons/hand-heart";
-    import BriefcaseBusiness from "lucide-svelte/icons/briefcase-business";
-    import GraduationCap from "lucide-svelte/icons/graduation-cap";
-    import Swords from "lucide-svelte/icons/swords";
-    import Card from "./card.svelte";
-    let { element } = $props();
-
-
+	import {
+		BriefcaseBusiness,
+		GraduationCap,
+		HandHeart,
+		Swords,
+	} from "@steeze-ui/lucide-icons";
+	import Card from "./card.svelte";
+	import { Icon } from "@steeze-ui/svelte-icon";
+	let { element } = $props();
 </script>
 
-    <div
-        class="relative flex gap-4 flex-1"
-    >
-        <div class="flex flex-col items-center justify-center">
-            {#if element.type == "volunteering"}
-                <HandHeart
-                    class="bg-pink-400 rounded-full size-8 p-1 border-2 border-white"
-                    color="white"
-                ></HandHeart>
-            {:else if element.type == "work"}
-                <BriefcaseBusiness
-                    class="bg-yellow-500 rounded-full size-8 p-1 border-2 border-white"
-                    color="white"
-                ></BriefcaseBusiness>
-            {:else if element.type == "study"}
-                <GraduationCap
-                    class="bg-green-500 rounded-full size-8 p-1 border-2 border-white"
-                    color="white"
-                ></GraduationCap>
-            {:else if element.type == "contest"}
-                <Swords
-                    class="bg-red-400 rounded-full size-8 p-1 border-2 border-white"
-                    color="white"
-                ></Swords>
-            {/if}
-        </div>
-        <Card {element}></Card>
-    </div>
+<div class="relative flex gap-4 flex-1">
+	<div class="flex flex-col items-center justify-center">
+		{#if element.type == "volunteering"}
+			<Icon
+				src={HandHeart}
+				class="bg-pink-400 rounded-full size-8 p-1 border-2 border-white"
+			/>
+		{:else if element.type == "work"}
+			<Icon
+				src={BriefcaseBusiness}
+				class="bg-yellow-400 rounded-full size-8 p-1 border-2 border-white"
+			/>
+		{:else if element.type == "study"}
+			<Icon
+				src={GraduationCap}
+				class="bg-green-400 rounded-full size-8 p-1 border-2 border-white"
+			/>
+		{:else if element.type == "contest"}
+			<Icon
+				src={Swords}
+				class="bg-red-400 rounded-full size-8 p-1 border-2 border-white"
+			/>
+		{/if}
+	</div>
+	<Card {element}></Card>
+</div>
 
 <style>
 </style>
