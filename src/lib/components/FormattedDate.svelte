@@ -3,8 +3,5 @@
 </script>
 
 <time datetime={date.toISOString()}>
-  {date.toLocaleDateString("fr-FR", {
-	year: "numeric",
-	month: "2-digit"
-  })}
+  {date.toLocaleDateString("fr-FR", { year: "numeric", month: "2-digit" })}
 </time>

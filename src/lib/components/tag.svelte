@@ -35,14 +35,9 @@
 	};
 </script>
 
-<div
-	class="inline-block rounded-xl bg-white/10 text-white py-0.5 px-2.5 text-sm shadow-sm mr-2"
->
+<div class="inline-block rounded-xl bg-white/10 text-white py-0.5 px-2.5 text-sm shadow-sm mr-2">
 	<div class="flex flex-row items-center gap-1">
-		<Icon
-			src={mapping[icon] === undefined ? BadgeInfo : mapping[icon]}
-			class="h-4 aspect-square"
-		></Icon>
+		<Icon src={mapping[icon] ? mapping[icon] : BadgeInfo} class="h-4 aspect-square"></Icon>
 		{icon}
 	</div>
 </div>

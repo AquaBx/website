@@ -37,8 +37,7 @@
 		<AccordionCat title={m.contests()} bind:data={contests}></AccordionCat>
 		<AccordionCat title={m.studies()} bind:data={studies}></AccordionCat>
 		<AccordionCat title={m.work()} bind:data={work}></AccordionCat>
-		<AccordionCat title={m.volunteering()} bind:data={volunteering}
-		></AccordionCat>
+		<AccordionCat title={m.volunteering()} bind:data={volunteering}></AccordionCat>
 		<AccordionCat title={m.projects()} bind:data={projects}></AccordionCat>
 		<Button {onclick}>Generate</Button>
 	</div>

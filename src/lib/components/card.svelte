@@ -21,17 +21,11 @@
 <IntersectionObserver once={true} element={htmlElement} bind:intersecting>
 	<div
 		bind:this={htmlElement}
-		class="{intersecting
-			? 'inview'
-			: ''} bg-white/10 border-3 border-white/10 flex-1 my-4 py-4 *:px-4 flex flex-col rounded-2xl text-white"
+		class="{intersecting ? 'inview' : ''} bg-white/10 border-3 border-white/10 flex-1 my-4 py-4 *:px-4 flex flex-col rounded-2xl text-white"
 	>
 		<h3 class="text-2xl">
 			{#if element.link}
-				<a
-					target="blank"
-					class="hover:underline flex items-center gap-1"
-					href={element.link}
-				>
+				<a target="blank" class="hover:underline flex items-center gap-1" href={element.link}>
 					{@html element.name}
 					<Icon src={Link} class="size-4" />
 				</a>
@@ -54,9 +48,7 @@
 				{#each element.dates as date}
 					<div>
 						{#if date.start && date.end}
-							<FormattedDate date={date.start} /> - <FormattedDate
-								date={date.end}
-							/>
+							<FormattedDate date={date.start} /> - <FormattedDate date={date.end}/>
 							{#if element.type == "work"}
 								({m.month({
 									count: monthDiff(date.start, date.end) + 1,

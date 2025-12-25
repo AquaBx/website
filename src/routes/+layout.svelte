@@ -3,7 +3,7 @@
 	import "../app.css";
 	import Header from "$lib/components/header.svelte";
 	import Navbar from "$lib/components/navbar.svelte";
-    import { slide,fly } from "svelte/transition";
+    import { fly } from "svelte/transition";
     import Footer from "$lib/components/footer.svelte";
 	let { children, data } = $props();
 	let lang = getLocale();
