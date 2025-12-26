@@ -1,28 +1,36 @@
 <script lang="ts">
-
-	import * as Accordion from "$lib/components/ui/accordion/index.js";
-    import Label from "$lib/components/ui/label/label.svelte";
-    import { Checkbox } from "$lib/components/ui/checkbox";
     import type { Post } from "$lib/types";
-    let {data = $bindable(), title} = $props()
+    import { Accordion, type AccordionItem } from "melt/builders";
+    let {items = $bindable()} : {items: Item[]} = $props()
+
+    type Item = AccordionItem<{
+        title: string;
+        categories: Post[]
+    }>;
+
+    const accordion = new Accordion();
 </script>
 
-<Accordion.Root type="single">
-    <Accordion.Item value="item-1">
-        <Accordion.Trigger>{title}</Accordion.Trigger>
-        <Accordion.Content>
-            <div class="flex flex-col gap-1">
-                {#each data as c}
-                    {@const uuid = crypto.randomUUID()}
-                    <div class="flex items-center gap-1">
-                        <Checkbox
-                            id={uuid}
-                            bind:checked={c.shown}
-                        ></Checkbox>
-                        <Label for={uuid}>{c.name}</Label>
-                    </div>
-                {/each}
+<div {...accordion.root}>
+  {#each items as i}
+    {@const item = accordion.getItem(i)}
+    <h2 {...item.heading}>
+      <button {...item.trigger}>
+        {item.item.title}
+      </button>
+    </h2>
+
+    <div {...item.content}>
+        {#each i.categories as c}
+            {@const uuid = crypto.randomUUID()}
+            <div class="flex items-center gap-1">
+                <input type="checkbox"
+                    id={uuid}
+                    bind:checked={c.shown}
+                >
+                <label>{c.name}</label>
             </div>
-        </Accordion.Content>
-    </Accordion.Item>
-</Accordion.Root>
+        {/each}
+    </div>
+  {/each}
+</div>

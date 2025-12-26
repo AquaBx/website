@@ -1,6 +1,5 @@
 <script lang="ts">
 	import CvBlock from "./CVBlock.svelte";
-	import { m } from "$lib/paraglide/messages";
 	import { Icon } from "@steeze-ui/svelte-icon";
 	import {
 		Github,
@@ -12,8 +11,7 @@
 	} from "@steeze-ui/lucide-icons";
 
 	let { data } = $props();
-	let { contests, projects, studies, work, volunteering, profile } = data;
-
+	let { profile } = $derived(data);
 	// Adaptation du format d'entrée YAML/frontmatter pour studies et companies
 	function formatDateRange(start, end) {
 		if (start && end) {
@@ -50,7 +48,7 @@
 		return categories2;
 	}
 
-	let categories: { [k: string]: string[] } = getCategories(projects);
+	let categories: { [k: string]: string[] } = {}//getCategories(projects);
 
 	let el = $state();
 	// let html2pdf: Function = $state();
@@ -113,7 +111,7 @@
 			})}>download</button
 > -->
 <main
-	class="m-auto relative w-full flex flex-row p-4 gap-4 bg-gradient-to-br text-base bg-white text-black"
+	class="m-auto relative w-full flex flex-row p-4 gap-4 bg-linear-to-br text-base bg-white text-black"
 	bind:this={el}
 >
 	<!-- Colonne latérale -->
@@ -357,20 +355,8 @@
 
 	<!-- Colonne principale -->
 	<section class="flex-1 flex flex-col gap-2">
-		{#if work.some((e) => e.shown)}
-			<CvBlock title={m.work()} posts={work} />
-		{/if}
-		{#if volunteering.some((e) => e.shown)}
-			<CvBlock title={m.volunteering()} posts={volunteering} />
-		{/if}
-		{#if projects.some((e) => e.shown)}
-			<CvBlock title={m.projects()} posts={projects} />
-		{/if}
-		{#if studies.some((e) => e.shown)}
-			<CvBlock title={m.studies()} posts={studies} />
-		{/if}
-		{#if contests.some((e) => e.shown)}
-			<CvBlock title={m.contests()} posts={contests} />
-		{/if}
+		{#each data.categories as {title,categories:posts}}
+			<CvBlock {title} {posts} />
+		{/each}
 	</section>
 </main>

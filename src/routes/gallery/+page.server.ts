@@ -1,13 +1,22 @@
-interface Post {
+interface imgtype {
+    src: string,
+    alt: string
+}
+
+interface PostOut {
+    images: imgtype[],
+    title: string,
+}
+
+interface PostIn {
     sources: string[],
     title: string,
-    data: string
 }
 
 export const csr = true
 
 async function getAll() {
-    let posts = []
+    let posts: PostOut[] = []
 
     const paths = import.meta.glob(`$content/photos/**/*.svx`, {
         eager: true,
@@ -15,10 +24,7 @@ async function getAll() {
 
     const images = import.meta.glob(`$content/photos/**/*`, {
         eager: true,
-        query: {
-            enhanced: true,
-            w: "1280; 800; 400"
-        }
+        query: { enhanced: true, w: "1280; 800; 400" }
     })
 
     // Convert absolute paths to filenames
@@ -31,15 +37,17 @@ async function getAll() {
     for (let path in paths) {
         const file = paths[path]
         if (file && typeof file === 'object' && 'metadata' in file) {
-            const metadata = file.metadata as Post
+            const metadata = file.metadata as PostIn
             if (metadata.sources.length > 0) {
-                const sources = metadata.sources.map((p) => {
-                    return imagesByFilename[p].default
+                const images = metadata.sources.map((src) => {
+                    return {
+                        src:imagesByFilename[src].default,
+                        alt:metadata.title
+                    }
                 })
-                posts.push({ ...metadata, sources })
+                posts.push({ ...metadata, images })
             }
         }
-
     }
     return posts
 }

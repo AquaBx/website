@@ -3,7 +3,6 @@
 	import "../app.css";
 	import Header from "$lib/components/header.svelte";
 	import Navbar from "$lib/components/navbar.svelte";
-    import { fly } from "svelte/transition";
     import Footer from "$lib/components/footer.svelte";
 	let { children, data } = $props();
 	let lang = getLocale();
@@ -16,10 +15,22 @@
 		}
 	};
 
+	import { onNavigate } from '$app/navigation';
+
+	onNavigate((navigation) => {
+		if (!document.startViewTransition) return;
+		return new Promise((resolve) => {
+			document.startViewTransition(async () => {
+				resolve();
+				await navigation.complete;
+			});
+		});
+	});
+
+
 </script>
-{#key data.url}
 	
-<main class="relative min-h-dvh mb-16" in:fly={{x:-200,duration:500, delay:500}} out:fly={{x:200,duration:500}}>
+<main class="relative min-h-dvh mb-16">
 
 	<Header></Header>
 	<container	class="m-auto w-full flex flex-col gap-12 py-16 px-4 max-w-6xl print:p-0">
@@ -29,7 +40,6 @@
 	<Footer></Footer>
 
 </main>
-{/key}
 
 <Navbar></Navbar>
 	<label
