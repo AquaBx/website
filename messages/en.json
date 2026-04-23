@@ -2,6 +2,7 @@
 	"$schema": "https://inlang.com/schema/inlang-message-format",
 	"description": "I am Tom Chauvel and I am {age} years old. Since my childhood I've been interested in science, especially computer science. To graduate in this field, I have been studying at the ESIR since 2021, at the University of Rennes (my heart's city).",
 	"home": "Home",
+	"timeline": "Timeline",
 	"projects": "Projects",
 	"gallery": "Gallery",
 	"cv": "CV",
@@ -22,7 +23,7 @@
 			}
 		}
 	],
-	"title": "Tom Chauvel",
+	"title": "AquaBx",
 	"work": "Professional experience",
 	"contests": "Programming contests",
 	"studies": "Studies",

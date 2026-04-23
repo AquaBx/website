@@ -35,9 +35,7 @@
 	};
 </script>
 
-<div class="inline-block rounded-xl bg-white/10 text-white py-0.5 px-2.5 text-sm shadow-sm mr-2">
-	<div class="flex flex-row items-center gap-1">
-		<Icon src={mapping[icon] ? mapping[icon] : BadgeInfo} class="h-4 aspect-square"></Icon>
-		{icon}
-	</div>
+<div class="inline-flex items-center gap-1.5 px-2 py-1 rounded-md bg-slate-50 border border-slate-100 text-slate-600 text-[11px] font-bold uppercase tracking-tight shadow-sm hover:border-sky-200 hover:bg-sky-50 transition-colors">
+	<Icon src={mapping[icon] ? mapping[icon] : BadgeInfo} class="size-3 text-slate-400"></Icon>
+	<span class="truncate max-w-[120px]">{icon}</span>
 </div>

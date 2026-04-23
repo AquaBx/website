@@ -1,46 +1,53 @@
 <script lang="ts">
 	import { m } from "$lib/paraglide/messages";
 	import AccordionCat from "./accordionCat.svelte";
+	import CV from "$lib/cvjolie/CV.svelte";
+	import Title from "$lib/components/Title.svelte";
+
 	let { data } = $props();
 
-	let profile = {
-	name: "Tom Chauvel",
-		address: { value: "35740 Pacé, France", url: "https://maps.google.com/?q=35740+Pacé,+France" },
-		website: { value: "www.aquabx.ovh", url: "https://www.aquabx.ovh/" },
-		phone: { value: "+33601846944", url: "tel:+33601846944" },
-		email: { value: "tom.chauvel@hotmail.com", url: "mailto:tom.chauvel@hotmail.com" },
-		linkedin: { value: "linkedin.com/in/tom-chauvel", url: "https://www.linkedin.com/in/tom-chauvel" },
-		github: { value: "github.com/aquabx", url: "https://github.com/aquabx" },
-		avatar: "/moi.png",
-		summary: "Étudiant curieux en 2ème année à l’ESIR, je recherche un stage de fin d’études ou un contrat de professionnalisation dans le développement web full-stack."
-	};
+	// On utilise $state pour que les modifications (cochage/décochage) soient prises en compte
+	let categories = $state([
+		{
+			title: m.contests(),
+			categories: data.contests.map((c) => ({ ...c, shown: true })),
+		},
+		{
+			title: m.projects(),
+			categories: data.projects.map((c) => ({ ...c, shown: true })),
+		},
+		{
+			title: m.studies(),
+			categories: data.studies.map((c) => ({ ...c, shown: true })),
+		},
+		{
+			title: m.work(),
+			categories: data.work.map((c) => ({ ...c, shown: true })),
+		},
+		{
+			title: m.volunteering(),
+			categories: data.volunteering.map((c) => ({ ...c, shown: true })),
+		},
+	]);
 
-
-	let dataInput = $state({
-		profile:profile,
-		categories:[
-			{title:m.contests(), categories: data.contests},
-			{title:m.projects(), categories: data.projects},
-			{title:m.studies(), categories: data.studies},
-			{title:m.work(), categories: data.work},
-			{title:m.volunteering(), categories: data.volunteering},
-		]
-	})
-
-    import CV from "$lib/cvjolie/CV.svelte";
-	// import template from "./template.typ?raw";
-    // import { main } from "./main";
-    // import Typst from "$lib/typst/Typst.svelte";
-
-
-	// const inputs = $derived({
-	// 	"/main.typ":main(dataInput),
-	// 	"/template.typ":template,
-	// });
+	let dataInput = $derived({
+		profile: data.profile,
+		categories: categories,
+	});
 </script>
 
-<div class="flex w-full md:flex-row flex-col-reverse gap-2 text-white">
-	<AccordionCat bind:items={dataInput.categories}></AccordionCat>
-	<!-- <Typst {inputs}></Typst> -->
-	<CV data={dataInput}></CV>
+<div class="flex flex-col gap-12 py-12 print:p-0">
+	<Title title={m.cv()} />
+	<div
+		class="flex w-full lg:flex-row flex-col-reverse gap-6 p-6 bg-gray-50 min-h-screen text-black print:p-0 print:bg-white"
+	>
+		<div class="lg:w-1/3 w-full print:hidden">
+			<AccordionCat bind:items={categories}></AccordionCat>
+		</div>
+		<div
+			class="lg:w-2/3 w-full sticky top-6 self-start print:static print:w-full"
+		>
+			<CV data={dataInput}></CV>
+		</div>
+	</div>
 </div>

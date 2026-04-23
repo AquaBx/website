@@ -1,16 +1,13 @@
 <script lang="ts">
 	import CvRow from "./CVRow.svelte";
-
 	const { posts, title } = $props();
 </script>
 
-<section>
-	<h2
-		class="text-2xl font-extrabold text-sky-800 mb-1 tracking-wide uppercase border-b-2 border-sky-200 pb-1 pl-1"
-	>
+<section class="flex flex-col gap-4">
+	<h2 class="text-xs font-black uppercase tracking-widest text-slate-400 border-b border-slate-100 pb-2">
 		{title}
 	</h2>
-	<div class="flex flex-col bg-white/80">
+	<div class="flex flex-col gap-6">
 		{#each posts as post}
 			{#if post.shown}
 				<CvRow {post}></CvRow>

@@ -1,0 +1,45 @@
+{
+    "name": "Tom Chauvel",
+    "address": {
+        "value": "35740 Pacé, France",
+        "url": "https://maps.google.com/?q=35740+Pacé,+France"
+    },
+    "website": {
+        "value": "www.aquabx.ovh",
+        "url": "https://www.aquabx.ovh/"
+    },
+    "phone": {
+        "value": "+33601846944",
+        "url": "tel:+33601846944"
+    },
+    "email": {
+        "value": "tom.chauvel@hotmail.com",
+        "url": "mailto:tom.chauvel@hotmail.com"
+    },
+    "linkedin": {
+        "value": "linkedin.com/in/tom-chauvel",
+        "url": "https://www.linkedin.com/in/tom-chauvel"
+    },
+    "github": {
+        "value": "github.com/aquabx",
+        "url": "https://github.com/aquabx"
+    },
+    "avatar": "/moi.png",
+    "summary": {
+        "fr": "Étudiant curieux en 2ème année à l’ESIR, je recherche un stage de fin d’études ou un contrat de professionnalisation dans le développement web full-stack.",
+        "en": "Curious 2nd-year student at ESIR, looking for a final internship or a work-study contract in full-stack web development."
+    },
+    "languages": [
+        { "name": "Français", "level": { "fr": "Natif", "en": "Native" } },
+        { "name": "Anglais", "level": { "fr": "C1", "en": "C1" } },
+        { "name": "Espagnol", "level": { "fr": "B1", "en": "B1" } },
+        { "name": "Polonais", "level": { "fr": "Notions", "en": "Basics" } }
+    ],
+    "certifications": [
+        { "name": "Toeic", "detail": { "fr": "965/990", "en": "965/990" }, "year": "2024" },
+        { "name": "Baccalauréat", "detail": { "fr": "Mention Très Bien", "en": "Highest Honors" }, "year": "2021" },
+        { "name": "Sensibilisation aux ODD" },
+        { "name": "Permis B" },
+        { "name": "PSC1" }
+    ]
+}

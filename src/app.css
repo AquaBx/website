@@ -72,9 +72,9 @@
     --sidebar-ring: oklch(0.551 0.027 264.364);
 }
 
-html {
+/* html {
     @apply bg-linear-to-br from-[#051937] to-[#33345a]
-}
+} */
 
 .inview {
     animation: myanim 0.5s ease;

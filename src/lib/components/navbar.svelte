@@ -1,22 +1,36 @@
 <script lang="ts">
-        import * as m from "$lib/paraglide/messages.js";
+        import { m } from "$lib/paraglide/messages.js";
         import { localizeHref } from "$lib/paraglide/runtime";
+        import { page } from "$app/state";
+        import { cn } from "$lib/utils";
+        import { House, Briefcase, Image, Music, FileText } from "@steeze-ui/lucide-icons";
+        import { Icon } from "@steeze-ui/svelte-icon";
+
+        const links = [
+            { href: "/", label: m.home, icon: House },
+            { href: "/projects", label: m.projects, icon: Briefcase },
+            { href: "/gallery", label: m.gallery, icon: Image },
+            { href: "/music", label: m.music, icon: Music },
+            { href: "/cv", label: m.cv, icon: FileText },
+        ];
 </script>
 
-<div class="flex gap-4 items-center justify-center fixed bottom-2 left-1/2 -translate-x-1/2 p-4 text-white bg-white/10 w-fit m-auto rounded-2xl backdrop-blur-xs z-10">
-        <a href={localizeHref("/")} class="border-b-4 border-white/50">
-                {m.home()}
+<nav class="fixed bottom-6 left-1/2 -translate-x-1/2 p-2 bg-white/70 backdrop-blur-xl border border-slate-200 shadow-2xl rounded-2xl z-50 flex gap-1">
+    {#each links as link}
+        {@const active = page.url.pathname === localizeHref(link.href)}
+        <a 
+            href={localizeHref(link.href)} 
+            class={cn(
+                "flex items-center gap-2 px-4 py-2.5 rounded-xl transition-all duration-300 group",
+                active 
+                    ? "bg-slate-900 text-white shadow-lg shadow-slate-200 scale-105" 
+                    : "text-slate-500 hover:text-slate-900 hover:bg-slate-100"
+            )}
+        >
+            <Icon src={link.icon} class={cn("size-4 transition-transform group-hover:scale-110", active ? "text-sky-400" : "")} />
+            <span class="text-sm font-bold tracking-tight">
+                {link.label()}
+            </span>
         </a>
-        <a href={localizeHref("/projects")} class="border-b-4 border-white/50">
-                {m.projects()}
-        </a>
-        <a href={localizeHref("/gallery")} class="border-b-4 border-white/50">
-                {m.gallery()}
-        </a>
-        <a href={localizeHref("/music")} class="border-b-4 border-white/50">
-                {m.music()}
-        </a>
-        <a href={localizeHref("/cv")} class="border-b-4 border-white/50">
-                {m.cv()}
-        </a>
-</div>
+    {/each}
+</nav>

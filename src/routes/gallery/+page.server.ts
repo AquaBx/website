@@ -1,23 +1,8 @@
-interface imgtype {
-    src: string,
-    alt: string
-}
-
-interface PostOut {
-    images: imgtype[],
-    title: string,
-}
-
-interface PostIn {
-    sources: string[],
-    title: string,
-}
+import type { PostIn, PostOut } from "$lib/types"
 
 export const csr = true
 
 async function getAll() {
-    let posts: PostOut[] = []
-
     const paths = import.meta.glob(`$content/photos/**/*.svx`, {
         eager: true,
     })
@@ -27,29 +12,32 @@ async function getAll() {
         query: { enhanced: true, w: "1280; 800; 400" }
     })
 
-    // Convert absolute paths to filenames
+    // Map images by their filename for quick lookup
     const imagesByFilename = Object.entries(images).reduce((acc, [path, value]) => {
         const filename = path.split('/').pop() || path;
-        acc[filename] = value;
+        acc[filename] = (value as any).default;
         return acc;
-    }, {} as typeof images);
+    }, {} as Record<string, any>);
 
-    for (let path in paths) {
-        const file = paths[path]
-        if (file && typeof file === 'object' && 'metadata' in file) {
-            const metadata = file.metadata as PostIn
-            if (metadata.sources.length > 0) {
-                const images = metadata.sources.map((src) => {
-                    return {
-                        src:imagesByFilename[src].default,
-                        alt:metadata.title
-                    }
-                })
-                posts.push({ ...metadata, images })
+    const posts: PostOut[] = [];
+
+    for (const path in paths) {
+        const file = paths[path] as any;
+        if (file?.metadata) {
+            const metadata = file.metadata as PostIn;
+            if (metadata.sources?.length > 0) {
+                const postImages = metadata.sources.map((src) => ({
+                    src: imagesByFilename[src],
+                    alt: metadata.title || "Gallery image"
+                })).filter(img => img.src); // Ensure image was found
+                
+                if (postImages.length > 0) {
+                    posts.push({ ...metadata, images: postImages });
+                }
             }
         }
     }
-    return posts
+    return posts;
 }
 
 export async function load() {
