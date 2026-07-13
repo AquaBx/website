@@ -1,0 +1,308 @@
+{
+    "R_kgDOTFaeOg": {
+        "description": {
+            "fr": "Application afin de centraliser les mémoires, afin de les partager et les éditer facilement. Il expose un MCP avec une recherche sémantique pour que le LLM les retrouves facilement.",
+            "en": "An application designed to centralise memories, so that they can be easily shared and edited. It features a MCP with semantic search functionality to enable the large language model (LLM) to find them easily."
+        },
+        "categories": {
+            "Frontend": [
+                "Svelte",
+                "Tailwind"
+            ],
+            "Langage": [
+                "TypeScript"
+            ],
+            "Backend": [
+                "SvelteKit"
+            ],
+            "Cloud": [
+                "AuthJS",
+                "KeyCloak",
+                "Docker"
+            ]
+        }
+    },
+    "R_kgDOMOBIbQ": {
+        "description": {
+            "fr": "Application pour suivre la consommation des participants au cours d'un événement.",
+            "en": "Application to track participants' consumption during an event."
+        },
+        "categories": {
+            "Frontend": [
+                "React",
+                "Tailwind"
+            ],
+            "Langage": [
+                "Python",
+                "TypeScript"
+            ],
+            "Backend": [
+                "Python"
+            ],
+            "Cloud": [
+                "AWS",
+                "AWS-Amplify",
+                "AWS-Lambda",
+                "AWS-DynamoDB"
+            ]
+        }
+    },
+    "R_kgDOIuH8fA": {
+        "description": {
+            "en": "Game we programmed for a school project. I mainly contributed to the physics, lighting, performance optimization, and the separation of the game and render loops (threading).",
+            "fr": "Jeu qu'on a programmé pour un projet d'école. J'ai surtout contribué à la physique, la lumière, l'optimisation des performances et la séparation de la boucle de jeu et de rendu (threading)."
+        },
+        "categories": {
+            "Langage": [
+                "Python"
+            ]
+        }
+    },
+    "R_kgDONQ1jhQ": {
+        "categories": {
+            "Frontend": [
+                "Svelte",
+                "Tailwind"
+            ],
+            "Langage": [
+                "TypeScript"
+            ]
+        }
+    },
+    "": {
+        "name": {
+            "en": "Audio Player",
+            "fr": "Audio Player"
+        },
+        "link": "https://codepen.io/AquaBx/pen/NWgKKBK",
+        "dates": [
+            {
+                "start": "Aug 21 2021",
+                "end": "Aug 21 2021"
+            }
+        ],
+        "categories": {
+            "Langage": [
+                "JavaScript",
+                "CSS"
+            ]
+        }
+    },
+    "R_kgDOIvMGgg": {
+        "description": {
+            "fr": "Tentative de faire une application de prise de notes.",
+            "en": "Attempt to make a note-taking application."
+        },
+        "categories": {
+            "Frontend": [
+                "Svelte"
+            ],
+            "Langage": [
+                "TypeScript"
+            ],
+            "Desktop": [
+                "Tauri"
+            ]
+        }
+    },
+    "R_kgDONRm2-A": {
+        "categories": {
+            "Langage": [
+                "C++"
+            ],
+            "Graphics": [
+                "SDL"
+            ]
+        }
+    },
+    "R_kgDOGHo13Q": {
+        "description": {
+            "fr": "Un site pour suivre la disponibilité des salles de notre école. Incorpore aussi une carte pour savoir où se situe chaque bâtiment.",
+            "en": "A website to track the availability of rooms in our school. Also includes a map to locate each building."
+        },
+        "categories": {
+            "Frontend": [
+                "Svelte"
+            ],
+            "Langage": [
+                "TypeScript",
+                "Python"
+            ]
+        }
+    },
+    "R_kgDOMLBCDA": {
+        "description": {
+            "fr": "Un éditeur de Canvas (JS) pour créer des images assez facilement. Il est utilisé pour les outils de l'ISATI.",
+            "en": "A Canvas (JS) editor to easily create images. It is used for ISATI tools."
+        },
+        "categories": {
+            "Langage": [
+                "TypeScript"
+            ]
+        }
+    },
+    "R_kgDON2IIAQ": {
+        "categories": {
+            "Frontend": [
+                "Angular",
+                "Tailwind"
+            ],
+            "Langage": [
+                "TypeScript"
+            ],
+            "Backend": [
+                "NestJS",
+                "TypeORM"
+            ],
+            "Database": [
+                "SQLite"
+            ]
+        },
+        "description": {
+            "fr": "Projet de cours conçu pour simplifier la gestion des associations.",
+            "en": "Course project designed to simplify association management."
+        }
+    },
+    "R_kgDOHSooJA": {
+        "categories": {
+            "Frontend": [
+                "VueJS"
+            ],
+            "Langage": [
+                "TypeScript"
+            ]
+        }
+    },
+    "R_kgDOLqbhzA": {
+        "description": {
+            "fr": "Jeu aventure puzzle fait avec Godot.",
+            "en": "Adventure puzzle game made with Godot."
+        },
+        "categories": {
+            "Game": [
+                "Godot"
+            ]
+        }
+    },
+    "R_kgDOLRixeg": {
+        "categories": {
+            "Frontend": [
+                "Svelte",
+                "Tailwind"
+            ],
+            "Langage": [
+                "TypeScript",
+                "Python"
+            ],
+            "Backend": [
+                "Python"
+            ],
+            "Cloud": [
+                "AWS",
+                "AWS-Amplify",
+                "AWS-Lambda",
+                "AWS-Cognito",
+                "AWS-S3",
+                "AWS-DynamoDB",
+                "Google Workspace (Authentification)"
+            ]
+        },
+        "description": {
+            "fr": "Site pour le BDE de notre école afin de répertorier les événements, présenter les clubs, voir les disponibilités des salles et créer les publications Instagram avec un outil dédié .",
+            "en": "Website for our school's student association to list events, present clubs, check room availability, and create Instagram posts with a dedicated tool."
+        }
+    },
+    "R_kgDOGrW6yA": {
+        "categories": {
+            "Langage": [
+                "JavaScript",
+                "CSS"
+            ]
+        }
+    },
+    "R_kgDOL_d0WQ": {
+        "description": {
+            "en": "A C++ game made as a team using SDL as the rendering engine. I mainly contributed to interactions and detection of objects around the character.",
+            "fr": "Un jeu en C++ fait en équipe utilisant la SDL comme moteur de rendu. J'ai surtout contribué aux interactions et aux détections des objets autour du personnage."
+        },
+        "categories": {
+            "Langage": [
+                "C++"
+            ],
+            "Graphics": [
+                "SDL"
+            ]
+        }
+    },
+    "MDEwOlJlcG9zaXRvcnkyODM2MTUxMjI=": {
+        "categories": {
+            "Langage": [
+                "JavaScript",
+                "CSS"
+            ],
+            "Desktop": [
+                "ElectronJS"
+            ]
+        }
+    },
+    "R_kgDOGrkQTA": {
+        "description": {
+            "fr": "Création d'un petit site du temps ou j'avais besoin de vérifier mes équations bilans en chimie.",
+            "en": "Created a small website back when I needed to check my balance equations in chemistry."
+        },
+        "categories": {
+            "Langage": [
+                "JavaScript",
+                "CSS"
+            ]
+        }
+    },
+    "R_kgDOOMV9YQ": {
+        "categories": {
+            "Frontend": [
+                "Svelte",
+                "Tailwind"
+            ],
+            "Backend": [
+                "SvelteKit"
+            ],
+            "Database": [
+                "Pocketbase"
+            ],
+            "Méthodologie": [
+                "Scrum"
+            ],
+            "Langage": [
+                "TypeScript"
+            ]
+        },
+        "description": {
+            "fr": "Projet en équipe permettant de planifier un voyage dans une ville donnée. Utilise l’IA (LLaMA) pour générer un guide personnalisé selon les préférences de l’utilisateur.",
+            "en": "Team project to plan a trip in a given city. Uses AI (LLaMA) to generate a personalized guide based on user preferences."
+        }
+    },
+    "R_kgDON1lq9w": {
+        "description": {
+            "fr": "Tentative de création d'un réseau de neurones afin qu'il puisse finir le premier niveau de Mario Bros. L'environnement a été recréé en lisant directement dans la mémoire du jeu et en calculant la distance du personnage aux obstacles. Pour l'entraînement, j'avais essayé de le faire plutôt avec des algorithmes génétiques. C'est pour l'instant pas très concluant.",
+            "en": ""
+        },
+        "categories": {
+            "Langage": [
+                "Python",
+                "PyTorch"
+            ]
+        }
+    },
+    "R_kgDOOAiQQw": {
+        "description": {
+            "fr": "Intéressé par les vidéos de @yoshtm, j'ai essayé de refaire la même chose. J'ai créé un plugin sur Trackmania qui récupère la vitesse, la position et la matrice de transformation 3D. Ensuite, j'ai tracé des lignes depuis l'avant de la voiture vers les objets de collision les plus proches (en seuillant l'image). Ces distances, ainsi que la vitesse, étaient en entrée de mon réseau de neurones. J'ai essayé de l'entraîner, mais c'était long, du fait que je ne puisse ni accélérer le jeu, ni le paralléliser. De ce fait, la voiture ne roulait pas très bien.",
+            "en": ""
+        },
+        "categories": {
+            "Langage": [
+                "Python",
+                "PyTorch"
+            ]
+        }
+    }
+}

@@ -1,0 +1,50 @@
+meta {
+  name: prs
+  type: graphql
+  seq: 1
+}
+
+post {
+  url: https://api.github.com/graphql
+  body: graphql
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer {{GithubToken}}
+}
+
+body:graphql {
+  query ($queryString: String!, $cursor: String) {
+    search(query: $queryString, type: ISSUE, first: 100, after: $cursor) {
+      nodes {
+        ... on PullRequest {
+          id
+          repository {
+            name
+          }
+          title
+          url
+        }
+   
+      }     pageInfo {
+            endCursor
+            hasNextPage
+        }
+    }
+  }
+  
+}
+
+body:graphql:vars {
+  {
+    "username": "AquaBx",
+    "max":100,
+    "queryString": "is:pr is:merged author:AquaBx -user:AquaBx -org:gauchedinternet"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

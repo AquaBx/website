@@ -1,0 +1,50 @@
+meta {
+  name: repos
+  type: graphql
+  seq: 2
+}
+
+post {
+  url: https://api.github.com/graphql
+  body: graphql
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer {{GithubToken}}
+}
+
+body:graphql {
+  query GetCollaboratorRepos {
+    viewer {
+      repositories(
+        first: 100
+        affiliations: [COLLABORATOR, ORGANIZATION_MEMBER]
+        ownerAffiliations: [COLLABORATOR, ORGANIZATION_MEMBER]
+      ) {
+        totalCount
+        pageInfo {
+          endCursor
+          hasNextPage
+        }
+        nodes {
+          nameWithOwner
+          url
+        }
+      }
+    }
+  }
+}
+
+body:graphql:vars {
+  {
+    "username": "AquaBx",
+    "cursor":"Y3Vyc29yOnYyOpK0MjAyNS0wNi0xMFQxNjowNTo0MVrOOLdqNQ==",
+    "queryString": "is:pr is:merged author:AquaBx -user:AquaBx -org:gauchedinternet"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
