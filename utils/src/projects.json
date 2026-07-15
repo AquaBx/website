@@ -1,8 +1,8 @@
 {
     "R_kgDOTFaeOg": {
         "description": {
-            "fr": "Application afin de centraliser les mémoires, afin de les partager et les éditer facilement. Il expose un MCP avec une recherche sémantique pour que le LLM les retrouves facilement.",
-            "en": "An application designed to centralise memories, so that they can be easily shared and edited. It features a MCP with semantic search functionality to enable the large language model (LLM) to find them easily."
+            "fr": "Développé une plateforme de RAG avec le protocol MCP et TypeScript afin de partager et de modifier ses mémoires. Configuré le déploiement conteneurisé avec Docker, orchestrant les services SvelteKit, Keycloak et Turso.",
+            "en": "Developed a document RAG platform using TypeScript. Configured containerized deployment with Docker, orchestrating SvelteKit, Keycloak, and Turso services."
         },
         "categories": {
             "Frontend": [
@@ -10,7 +10,7 @@
                 "Tailwind"
             ],
             "Langage": [
-                "TypeScript"
+                "TypeScript","JavaScript"
             ],
             "Backend": [
                 "SvelteKit"
@@ -19,13 +19,19 @@
                 "AuthJS",
                 "KeyCloak",
                 "Docker"
+            ],
+            "AI": [
+                "LLMs",
+                "RAG",
+                "Semantic Search",
+                "MCP"
             ]
         }
     },
     "R_kgDOMOBIbQ": {
         "description": {
-            "fr": "Application pour suivre la consommation des participants au cours d'un événement.",
-            "en": "Application to track participants' consumption during an event."
+            "fr": "Conception et implémentation d'une application de suivi de consommation d'événements utilisant React et TypeScript pour le frontend, couplée à un backend API REST Python hébergé sur AWS, pour un évènement de plus de 100 participants.",
+            "en": "Designed and implemented a responsive event consumption tracking web application using React (state hooks, components) and TypeScript for the frontend, coupled with a Python REST API backend hosted on AWS serverless infrastructure, successfully serving 100+ active event participants."
         },
         "categories": {
             "Frontend": [
@@ -34,16 +40,13 @@
             ],
             "Langage": [
                 "Python",
-                "TypeScript"
+                "TypeScript","JavaScript"
             ],
             "Backend": [
                 "Python"
             ],
             "Cloud": [
-                "AWS",
-                "AWS-Amplify",
-                "AWS-Lambda",
-                "AWS-DynamoDB"
+                "AWS"
             ]
         }
     },
@@ -59,13 +62,17 @@
         }
     },
     "R_kgDONQ1jhQ": {
+        "description": {
+            "fr": "Développé un site web portfolio interactif en JavaScript/TypeScript avec SvelteKit et Tailwind CSS, intégrant les API REST de GitHub pour afficher dynamiquement les dépôts, optimisant le temps de chargement de la page de 25%.",
+            "en": "Developed a personal portfolio web application using JavaScript/TypeScript and SvelteKit, integrating GitHub REST APIs to fetch and display repository data dynamically, improving page loading times by 25%."
+        },
         "categories": {
             "Frontend": [
                 "Svelte",
                 "Tailwind"
             ],
             "Langage": [
-                "TypeScript"
+                "TypeScript","JavaScript"
             ]
         }
     },
@@ -98,7 +105,7 @@
                 "Svelte"
             ],
             "Langage": [
-                "TypeScript"
+                "TypeScript","JavaScript"
             ],
             "Desktop": [
                 "Tauri"
@@ -118,14 +125,14 @@
     "R_kgDOGHo13Q": {
         "description": {
             "fr": "Un site pour suivre la disponibilité des salles de notre école. Incorpore aussi une carte pour savoir où se situe chaque bâtiment.",
-            "en": "A website to track the availability of rooms in our school. Also includes a map to locate each building."
+            "en": "A web application to monitor classroom availability in real-time, featuring an interactive map for campus building navigation."
         },
         "categories": {
             "Frontend": [
                 "Svelte"
             ],
             "Langage": [
-                "TypeScript",
+                "TypeScript","JavaScript",
                 "Python"
             ]
         }
@@ -137,7 +144,7 @@
         },
         "categories": {
             "Langage": [
-                "TypeScript"
+                "TypeScript","JavaScript"
             ]
         }
     },
@@ -148,7 +155,7 @@
                 "Tailwind"
             ],
             "Langage": [
-                "TypeScript"
+                "TypeScript","JavaScript"
             ],
             "Backend": [
                 "NestJS",
@@ -169,7 +176,7 @@
                 "VueJS"
             ],
             "Langage": [
-                "TypeScript"
+                "TypeScript","JavaScript"
             ]
         }
     },
@@ -191,7 +198,7 @@
                 "Tailwind"
             ],
             "Langage": [
-                "TypeScript",
+                "TypeScript","JavaScript",
                 "Python"
             ],
             "Backend": [
@@ -199,17 +206,12 @@
             ],
             "Cloud": [
                 "AWS",
-                "AWS-Amplify",
-                "AWS-Lambda",
-                "AWS-Cognito",
-                "AWS-S3",
-                "AWS-DynamoDB",
-                "Google Workspace (Authentification)"
+                "Google Workspace Auth"
             ]
         },
         "description": {
             "fr": "Site pour le BDE de notre école afin de répertorier les événements, présenter les clubs, voir les disponibilités des salles et créer les publications Instagram avec un outil dédié .",
-            "en": "Website for our school's student association to list events, present clubs, check room availability, and create Instagram posts with a dedicated tool."
+            "en": "Built the student association web platform featuring event scheduling, club directories, room availability, and an Instagram post creation generator tool."
         }
     },
     "R_kgDOGrW6yA": {
@@ -273,23 +275,31 @@
                 "Scrum"
             ],
             "Langage": [
-                "TypeScript"
+                "TypeScript","JavaScript"
+            ],
+            "Cloud": [
+                "Docker"
             ]
         },
         "description": {
-            "fr": "Projet en équipe permettant de planifier un voyage dans une ville donnée. Utilise l’IA (LLaMA) pour générer un guide personnalisé selon les préférences de l’utilisateur.",
-            "en": "Team project to plan a trip in a given city. Uses AI (LLaMA) to generate a personalized guide based on user preferences."
-        }
+            "fr": "Développé en équipe selon la méthodologie Agile (Scrum) un planificateur de voyage intelligent intégrant l'API LLaMA pour générer des itinéraires personnalisés.",
+            "en": "Collaborated in an Agile team running Scrum to build a trip planner featuring an integrated LLaMA LLM API to generate customized itineraries based on user preferences."
+        },
+        "name":"TravelPlanner"
     },
     "R_kgDON1lq9w": {
         "description": {
             "fr": "Tentative de création d'un réseau de neurones afin qu'il puisse finir le premier niveau de Mario Bros. L'environnement a été recréé en lisant directement dans la mémoire du jeu et en calculant la distance du personnage aux obstacles. Pour l'entraînement, j'avais essayé de le faire plutôt avec des algorithmes génétiques. C'est pour l'instant pas très concluant.",
-            "en": ""
+            "en": "Trained a neural network to complete the first level of Mario Bros by reading game memory directly and calculating character-to-obstacle distances. Explored reinforcement learning and genetic algorithms."
         },
         "categories": {
             "Langage": [
-                "Python",
-                "PyTorch"
+                "Python"
+            ],
+            "AI": [
+                "PyTorch",
+                "Neural Networks",
+                "Genetic Algorithms"
             ]
         }
     },
@@ -302,6 +312,941 @@
             "Langage": [
                 "Python",
                 "PyTorch"
+            ]
+        }
+    },
+    "R_kgDONvayGw": {
+        "description": {
+            "fr": "Un outil CLI pour générer des classes de type Visitor pour les grammaires de projets Langium. J'ai contribué en corrigeant un problème de compilation lors de l'utilisation de yarn.",
+            "en": "A CLI tool to generate Visitor pattern classes for Langium projects. I contributed by fixing a compilation issue when building with yarn."
+        },
+        "categories": {
+            "Langage": [
+                "TypeScript","JavaScript",
+                "JavaScript"
+            ],
+            "Backend": [
+                "NodeJS"
+            ],
+            "Tool": [
+                "Langium"
+            ]
+        }
+    },
+    "R_kgDOHo0JYg": {
+        "description": {
+            "fr": "Scripts de création d'images disque bootables et personnalisables Arch Linux AArch64 pour Surface Pro X, avec support binfmt_misc et QEMU pour le cross-build.",
+            "en": "Utility script to build bootable and customizable Arch Linux AArch64 disk images for Surface Pro X, using QEMU and binfmt_misc for cross-compilation."
+        },
+        "categories": {
+            "Langage": [
+                "Shell"
+            ],
+            "Cloud": [
+                "Docker"
+            ],
+            "OS": [
+                "ArchLinux"
+            ]
+        }
+    },
+    "R_kgDOJUdgRQ": {
+        "description": {
+            "fr": "Écosystème complet permettant d'exécuter, compiler et intégrer Typst en JavaScript/TypeScript via WebAssembly. J'ai contribué en ajoutant un exemple d'intégration pour Svelte.",
+            "en": "Ecosystem to run Typst in JavaScript/TypeScript environments using WebAssembly. I contributed by adding a Svelte integration example."
+        },
+        "categories": {
+            "Langage": [
+                "Rust",
+                "TypeScript","JavaScript",
+                "JavaScript"
+            ],
+            "Frontend": [
+                "React",
+                "VueJS",
+                "Svelte",
+                "SolidJS"
+            ],
+            "Backend": [
+                "Wasm",
+                "NodeJS"
+            ]
+        }
+    },
+    "R_kgDOPEZ4yA": {
+        "description": {
+            "fr": "Générateur automatique de modèles sémantiques et d'analyses syntaxiques abstraites Langium à partir de diagrammes UML (fichiers XMI).",
+            "en": "Automatically generates Langium semantic models and abstract syntax definitions from UML diagrams in XMI format."
+        },
+        "categories": {
+            "Langage": [
+                "TypeScript","JavaScript",
+                "JavaScript"
+            ],
+            "Backend": [
+                "NodeJS"
+            ],
+            "Tool": [
+                "Langium"
+            ]
+        }
+    },
+    "R_kgDOOLdqNQ": {
+        "description": {
+            "fr": "Application web collaborative de Planning Poker en temps réel pour l'estimation de sprints agiles, avec persistance des sessions et gestion utilisateur.",
+            "en": "Collaborative real-time Planning Poker web application for agile sprint estimation, featuring session persistence and user account management."
+        },
+        "categories": {
+            "Frontend": [
+                "Svelte",
+                "Tailwind"
+            ],
+            "Langage": [
+                "TypeScript","JavaScript",
+                "Kotlin"
+            ],
+            "Cloud": [
+                "Docker"
+            ]
+        }
+    },
+    "R_kgDOOrM2BA": {
+        "description": {
+            "fr": "Application de gestion de tâches de bureau multiplateforme construite avec React, TypeScript et Tauri.",
+            "en": "Cross-platform desktop todo application built using React, TypeScript, and the Tauri framework."
+        },
+        "categories": {
+            "Frontend": [
+                "React"
+            ],
+            "Langage": [
+                "TypeScript","JavaScript",
+                "Rust"
+            ],
+            "Desktop": [
+                "Tauri",
+                "Vite"
+            ]
+        }
+    },
+    "R_kgDOLxVldg": {
+        "description": {
+            "fr": "Moteur de rendu 3D expérimental implémentant des concepts de base en C++ et OpenGL/GLSL.",
+            "en": "Experimental 3D rendering engine implementing core concepts in C++ and OpenGL/GLSL."
+        },
+        "categories": {
+            "Langage": [
+                "C++",
+                "GLSL"
+            ],
+            "Graphics": [
+                "OpenGL"
+            ]
+        }
+    },
+    "R_kgDOL5RMxQ": {
+        "description": {
+            "fr": "Bot Discord de combat de mèmes interactif développé en JavaScript avec la bibliothèque Discord.js.",
+            "en": "Interactive meme battle Discord bot developed in JavaScript using the Discord.js library."
+        },
+        "categories": {
+            "Langage": [
+                "JavaScript"
+            ],
+            "Backend": [
+                "NodeJS"
+            ],
+            "API": [
+                "DiscordJS"
+            ]
+        }
+    },
+    "R_kgDOI0LNoQ": {
+        "description": {
+            "fr": "Distribution Arch Linux non officielle et optimisée pour Windows Subsystem for Linux (WSL), packagée sous forme d'application UWP pour le Microsoft Store.",
+            "en": "Unofficial and optimized Arch Linux distribution for Windows Subsystem for Linux (WSL), packaged as a UWP app for the Microsoft Store."
+        },
+        "categories": {
+            "Langage": [
+                "C++",
+                "C",
+                "Python"
+            ],
+            "Cloud": [
+                "WSL",
+                "UWP"
+            ],
+            "OS": [
+                "ArchLinux"
+            ]
+        }
+    },
+    "R_kgDOIrZFIA": {
+        "description": {
+            "fr": "Distribution Fedora non officielle pour Windows Subsystem for Linux (WSL), basée sur les images rootfs officielles et packagée pour le Microsoft Store.",
+            "en": "Unofficial Fedora distribution for Windows Subsystem for Linux (WSL), based on official rootfs images and packaged for the Microsoft Store."
+        },
+        "categories": {
+            "Langage": [
+                "C++",
+                "C",
+                "Python"
+            ],
+            "Cloud": [
+                "WSL",
+                "UWP"
+            ],
+            "OS": [
+                "Fedora"
+            ]
+        }
+    },
+    "R_kgDOPTl5tA": {
+        "description": {
+            "fr": "Mon site web portfolio complet intégrant des composants interactifs, du multilinguisme et des intégrations d'API (GitHub, etc.), développé avec SvelteKit et Tailwind CSS.",
+            "en": "My complete personal portfolio website featuring interactive components, multilingual support, and API integrations, built with SvelteKit and Tailwind CSS."
+        },
+        "categories": {
+            "Frontend": [
+                "Svelte",
+                "Tailwind"
+            ],
+            "Backend": [
+                "SvelteKit"
+            ],
+            "Langage": [
+                "TypeScript","JavaScript",
+                "JavaScript"
+            ],
+            "Cloud": [
+                "Docker"
+            ]
+        }
+    },
+    "R_kgDOSfioPg": {
+        "description": {
+            "fr": "Configuration déclarative centralisée pour NixOS et Home Manager, gérant mes paquets, environnements système et dotfiles de manière reproductible.",
+            "en": "Centralized declarative configuration repository for NixOS and Home Manager, managing system-level packages and dotfiles reproducibly."
+        },
+        "categories": {
+            "Langage": [
+                "Nix",
+                "Shell"
+            ],
+            "Cloud": [
+                "NixOS",
+                "HomeManager"
+            ]
+        }
+    },
+    "R_kgDOSKApXw": {
+        "description": {
+            "fr": "Plateforme web de signalement et d'analyse de vulnérabilités et d'incidents de sécurité, utilisant MongoDB et Shadcn Svelte.",
+            "en": "Web application for reporting and analyzing security vulnerabilities and incidents, utilizing MongoDB and Shadcn Svelte."
+        },
+        "categories": {
+            "Frontend": [
+                "Svelte",
+                "Tailwind",
+                "ShadcnSvelte"
+            ],
+            "Backend": [
+                "SvelteKit",
+                "MongoDB"
+            ],
+            "Langage": [
+                "TypeScript","JavaScript",
+                "JavaScript"
+            ]
+        }
+    },
+    "R_kgDOQ5ki9A": {
+        "description": {
+            "fr": "Outil d'analyse binaire et de décodage des fichiers Microsoft Journal (.jnt) pour extraire et modéliser les tracés d'encre numérique.",
+            "en": "Binary parser and decoder for Microsoft Journal (.jnt) files, extracting and modeling digital ink paths."
+        },
+        "categories": {
+            "Langage": [
+                "Python"
+            ],
+            "Tool": [
+                "BinaryParser"
+            ]
+        }
+    },
+    "R_kgDOMcRCnQ": {
+        "description": {
+            "fr": "Preuve de concept d'une interface graphique (GUI) interactive de dessin et de boutons dessinée entièrement sur un Canvas HTML5 en TypeScript.",
+            "en": "Proof of concept of an interactive GUI and drawing canvas rendered entirely on a native HTML5 Canvas using TypeScript."
+        },
+        "categories": {
+            "Langage": [
+                "TypeScript","JavaScript"
+            ],
+            "Frontend": [
+                "CanvasAPI"
+            ],
+            "Tool": [
+                "Playwright",
+                "Bun"
+            ]
+        }
+    },
+    "R_kgDOQsOUXg": {
+        "description": {
+            "fr": "Une bibliothèque de composants Svelte 5 sans style (headless) fournissant la logique de base (comme un lecteur de musique et carrousel), packagée pour NPM.",
+            "en": "A headless Svelte 5 UI components library providing core interactive logic (such as a music player and carousel), packaged for NPM."
+        },
+        "categories": {
+            "Frontend": [
+                "Svelte",
+                "Tailwind"
+            ],
+            "Langage": [
+                "TypeScript","JavaScript",
+                "JavaScript"
+            ],
+            "Tool": [
+                "SveltePackage"
+            ]
+        }
+    },
+    "MDEwOlJlcG9zaXRvcnkzNzI4OTMxNzQ=": {
+        "description": {
+            "fr": "Fichier de configuration et profil GitHub de présentation personnelle.",
+            "en": "Configuration files and readme for my personal GitHub profile."
+        },
+        "categories": {
+            "Langage": [
+                "Markdown"
+            ]
+        }
+    },
+    "R_kgDONTxDNQ": {
+        "description": {
+            "fr": "Une bibliothèque mathématique personnalisée en TypeScript, compilée avec Rolldown et validée avec des tests de mutation Stryker.",
+            "en": "A custom math library written in TypeScript, built with Rolldown and optimized using Stryker mutation testing."
+        },
+        "categories": {
+            "Langage": [
+                "TypeScript","JavaScript"
+            ],
+            "Tool": [
+                "Rolldown",
+                "Vitest",
+                "Stryker"
+            ]
+        }
+    },
+    "R_kgDOHWynKA": {
+        "description": {
+            "fr": "Traceur de fonctions mathématiques en 3D interactif dans le navigateur avec Three.js et WebGL.",
+            "en": "Interactive 3D mathematical function plotter running in the browser with Three.js and WebGL."
+        },
+        "categories": {
+            "Langage": [
+                "JavaScript"
+            ],
+            "Graphics": [
+                "ThreeJS",
+                "WebGL"
+            ]
+        }
+    },
+    "R_kgDOQf5QUg": {
+        "description": {
+            "fr": "Scripts de web scraping et d'extraction de données.",
+            "en": "Web scraping and data extraction scripts."
+        },
+        "categories": {
+            "Langage": [
+                "Python"
+            ],
+            "Cloud": [
+                "Docker"
+            ]
+        }
+    },
+    "R_kgDOQfcjqQ": {
+        "description": {
+            "fr": "Service web générant dynamiquement des bannières d'icônes de technologies au format SVG pour agrémenter les fichiers de profil GitHub (README.md).",
+            "en": "Web service that dynamically generates technology icon banners in SVG format to customize GitHub profile readmes."
+        },
+        "categories": {
+            "Frontend": [
+                "Svelte",
+                "Tailwind"
+            ],
+            "Langage": [
+                "TypeScript","JavaScript",
+                "JavaScript"
+            ],
+            "Cloud": [
+                "Vercel"
+            ]
+        }
+    },
+    "R_kgDOLHgSTg": {
+        "description": {
+            "fr": "Application cartographique et interactive de suivi des pays et statistiques de l'Euro Basket utilisant MapLibre GL.",
+            "en": "Interactive map and dashboard tracking Euro Basket countries and statistics, built with MapLibre GL."
+        },
+        "categories": {
+            "Frontend": [
+                "Svelte",
+                "Tailwind",
+                "MapLibreGL"
+            ],
+            "Langage": [
+                "TypeScript","JavaScript",
+                "JavaScript"
+            ]
+        }
+    },
+    "R_kgDOQfQ5zg": {
+        "description": {
+            "fr": "Collection de notebooks Jupyter contenant des exemples d'Intelligence Artificielle et de Deep Learning.",
+            "en": "Collection of Jupyter notebooks with AI and Deep Learning examples."
+        },
+        "categories": {
+            "Langage": [
+                "Python"
+            ]
+        }
+    },
+    "R_kgDOPUTPrw": {
+        "description": {
+            "fr": "Application web de coordination et de gestion des pauses café collaboratives.",
+            "en": "Web application designed for coordinating and managing collaborative coffee breaks."
+        },
+        "categories": {
+            "Frontend": [
+                "Svelte",
+                "Tailwind"
+            ],
+            "Langage": [
+                "TypeScript","JavaScript",
+                "JavaScript"
+            ]
+        }
+    },
+    "R_kgDOOxaX3Q": {
+        "description": {
+            "fr": "Application cartographique conceptuelle de suivi en temps réel et d'itinéraires pour le réseau de bus STAR de Rennes.",
+            "en": "Conceptual transit map and real-time route tracker for the Rennes STAR bus network, using MapLibre GL."
+        },
+        "categories": {
+            "Frontend": [
+                "Svelte",
+                "Tailwind",
+                "MapLibreGL"
+            ],
+            "Langage": [
+                "TypeScript","JavaScript",
+                "JavaScript"
+            ]
+        }
+    },
+    "R_kgDONjFbuA": {
+        "description": {
+            "fr": "Service d'automatisation en Go surveillant plusieurs flux RSS pour publier les nouveautés sur des serveurs Discord via Webhooks.",
+            "en": "Automation service written in Go that monitors RSS feeds and publishes updates to Discord servers using Webhooks."
+        },
+        "categories": {
+            "Langage": [
+                "Go"
+            ],
+            "Cloud": [
+                "Docker"
+            ],
+            "API": [
+                "DiscordWebhook"
+            ]
+        }
+    },
+    "MDEwOlJlcG9zaXRvcnkzOTY4NTQzMDg=": {
+        "description": {
+            "fr": "Jeu de navigation Wikipédia implémentant un script d'extraction (scraping) et de nettoyage de pages Wikipédia.",
+            "en": "Wikipedia navigation game implementing a scraping and sanitization script for Wikipedia pages."
+        },
+        "categories": {
+            "Langage": [
+                "PHP",
+                "HTML"
+            ],
+            "Backend": [
+                "PHP"
+            ]
+        }
+    },
+    "MDEwOlJlcG9zaXRvcnkzOTg1NzMzNDI=": {
+        "description": {
+            "fr": "Bot Discord polyvalent doté de diverses commandes utilitaires et ludiques.",
+            "en": "Multi-purpose Discord bot with various utility and fun commands."
+        },
+        "categories": {
+            "Langage": [
+                "JavaScript",
+                "Python"
+            ]
+        }
+    },
+    "R_kgDOLk9VYA": {
+        "description": {
+            "fr": "Moteur de jeu voxel 3D écrit en Zig et rendu en OpenGL natif.",
+            "en": "Voxel-based 3D game engine written in Zig using native OpenGL rendering."
+        },
+        "categories": {
+            "Langage": [
+                "Zig",
+                "C",
+                "GLSL"
+            ],
+            "Graphics": [
+                "OpenGL"
+            ]
+        }
+    },
+    "R_kgDOMNlndg": {
+        "description": {
+            "fr": "Script utilisateur Tampermonkey automatisant le blocage de masse sur TikTok et Instagram pour faciliter la modération.",
+            "en": "Tampermonkey userscript automating mass blocking actions on TikTok and Instagram to assist moderation."
+        },
+        "categories": {
+            "Langage": [
+                "JavaScript"
+            ],
+            "Tool": [
+                "Tampermonkey"
+            ]
+        }
+    },
+    "MDEwOlJlcG9zaXRvcnk0MDI1NzEzNjA=": {
+        "description": {
+            "fr": "Un jeu Discord incrémental inspiré du jeu Idle Slayer.",
+            "en": "An incremental Discord game bot inspired by Idle Slayer."
+        },
+        "categories": {
+            "Langage": [
+                "Java"
+            ]
+        }
+    },
+    "R_kgDOGorDLA": {
+        "description": {
+            "fr": "Module de calcul de disponibilité de salles de cours basé sur le parsing de fichiers ICS et la recherche dichotomique temporelle.",
+            "en": "Classroom availability module based on parsing ICS files and conducting binary searches over calendars."
+        },
+        "categories": {
+            "Langage": [
+                "TypeScript","JavaScript"
+            ],
+            "Backend": [
+                "NodeJS",
+                "Express"
+            ],
+            "Tool": [
+                "TS-ICS"
+            ]
+        }
+    },
+    "R_kgDOKXuPkg": {
+        "description": {
+            "fr": "Application de bureau interactive pour les supports de cours de l'ESIR, développée avec Svelte et Tauri.",
+            "en": "Interactive desktop application for ESIR course materials, built with Svelte and Tauri."
+        },
+        "categories": {
+            "Frontend": [
+                "Svelte"
+            ],
+            "Langage": [
+                "TypeScript","JavaScript",
+                "Rust"
+            ],
+            "Desktop": [
+                "Tauri"
+            ]
+        }
+    },
+    "R_kgDONPK03w": {
+        "description": {
+            "fr": "Site web vitrine de présentation du projet WheelAid, intégrant des rendus et animations 3D complexes via Three.js et Spline.",
+            "en": "Showcase website for the WheelAid project, featuring complex 3D renders and animations using Three.js and Spline."
+        },
+        "categories": {
+            "Frontend": [
+                "Astro",
+                "Tailwind",
+                "ThreeJS",
+                "Spline"
+            ],
+            "Langage": [
+                "TypeScript","JavaScript",
+                "JavaScript"
+            ]
+        }
+    },
+    "R_kgDOPZ9V4Q": {
+        "description": {
+            "fr": "Application web d'analyse et d'extraction de caractéristiques d'empreintes de navigateur (fingerprinting), avec détection d'User Agent.",
+            "en": "Web application for extracting and analyzing browser fingerprint characteristics, featuring User Agent parsing."
+        },
+        "categories": {
+            "Frontend": [
+                "Svelte",
+                "Tailwind"
+            ],
+            "Langage": [
+                "TypeScript","JavaScript",
+                "JavaScript"
+            ],
+            "Tool": [
+                "UserAgentNG"
+            ]
+        }
+    },
+    "R_kgDOKFJdxA": {
+        "description": {
+            "fr": "Application web mobile de gestion d'événements pour le week-end d'intégration (WEI) de l'ISATI, développée en React/Redux.",
+            "en": "Mobile web application for event management during the ISATI integration weekend, built with React and Redux."
+        },
+        "categories": {
+            "Frontend": [
+                "React",
+                "MaterialUI"
+            ],
+            "Langage": [
+                "TypeScript","JavaScript",
+                "JavaScript"
+            ],
+            "Tool": [
+                "Redux"
+            ]
+        }
+    },
+    "R_kgDOOpOtuw": {
+        "description": {
+            "fr": "TP de mise en œuvre d'un système de cache en mémoire pour restreindre les échecs de connexions répétées, dans le cadre du cours de Technologies de Développement Logiciel (TSD).",
+            "en": "In-memory key-value storage implementation lab session for handling login failure rate limits, as part of the Technologies of Software Development (TSD) course."
+        },
+        "categories": {
+            "Langage": [
+                "Java"
+            ],
+            "Cloud": [
+                "Docker"
+            ]
+        }
+    },
+    "R_kgDOO73MbQ": {
+        "description": {
+            "fr": "Espace d'expérimentation pour le développement de Web Components natifs (sans framework).",
+            "en": "Playground for experimenting with native Web Components without frameworks."
+        },
+        "categories": {
+            "Langage": [
+                "JavaScript",
+                "HTML"
+            ]
+        }
+    },
+    "R_kgDOO5fhEw": {
+        "description": {
+            "fr": "TP de manipulation d'Amazon DynamoDB en local avec Docker Compose et intégration Python, dans le cadre du cours de Technologies de Développement Logiciel (TSD).",
+            "en": "DynamoDB Local integration lab session with Docker Compose and Python scripts, as part of the Technologies of Software Development (TSD) course."
+        },
+        "categories": {
+            "Langage": [
+                "Python",
+                "Shell"
+            ],
+            "Cloud": [
+                "Docker",
+                "AWS-DynamoDB"
+            ]
+        }
+    },
+    "R_kgDOO5feGA": {
+        "description": {
+            "fr": "TP d'initiation et tutoriel sur le langage Kotlin, dans le cadre du cours de Technologies de Développement Logiciel (TSD).",
+            "en": "Kotlin tutorial and introduction lab session, as part of the Technologies of Software Development (TSD) course."
+        },
+        "categories": {
+            "Langage": [
+                "Kotlin"
+            ]
+        }
+    },
+    "R_kgDOOxU5Ow": {
+        "description": {
+            "fr": "TP d'application Todo multiplateforme de bureau développée avec React et Tauri, dans le cadre du cours de Technologies de Développement Logiciel (TSD).",
+            "en": "Cross-platform desktop Todo app lab session built using React and Tauri, as part of the Technologies of Software Development (TSD) course."
+        },
+        "categories": {
+            "Frontend": [
+                "React"
+            ],
+            "Langage": [
+                "TypeScript","JavaScript",
+                "Rust"
+            ],
+            "Desktop": [
+                "Tauri"
+            ]
+        }
+    },
+    "R_kgDOOmsvCA": {
+        "description": {
+            "fr": "Application de gestion de tournois et compétitions sportives.",
+            "en": "Sports tournament and contest management application."
+        },
+        "categories": {
+            "Langage": [
+                "Java"
+            ]
+        }
+    },
+    "R_kgDOKGai-Q": {
+        "description": {
+            "fr": "Rendu graphique de base utilisant Zig et OpenGL.",
+            "en": "Basic graphics rendering using Zig and OpenGL."
+        },
+        "categories": {
+            "Langage": [
+                "Zig"
+            ],
+            "Graphics": [
+                "OpenGL"
+            ]
+        }
+    },
+    "R_kgDOOpOtCw": {
+        "description": {
+            "fr": "TP d'introduction à Java et Spring Boot (patrons Factory, structures Optionnelles), dans le cadre du cours de Technologies de Développement Logiciel (TSD).",
+            "en": "Introduction to Java and Spring Boot (Factory patterns, Optionals) lab session, as part of the Technologies of Software Development (TSD) course."
+        },
+        "categories": {
+            "Langage": [
+                "Java"
+            ],
+            "Backend": [
+                "Spring"
+            ]
+        }
+    },
+    "R_kgDOODIZig": {
+        "description": {
+            "fr": "Dépôt principal du cours de Technologies de Développement Logiciel (TSD) à PUT (édition 2025).",
+            "en": "Main repository for the Technologies of Software Development (TSD) course at PUT (2025 edition)."
+        },
+        "categories": {
+            "Langage": [
+                "C#",
+                "Ruby"
+            ]
+        }
+    },
+    "R_kgDOOcpYaQ": {
+        "description": {
+            "fr": "TP d'atelier pratique sur Docker (création d'images, configuration multi-stage), dans le cadre du cours de Technologies de Développement Logiciel (TSD) de 2025.",
+            "en": "Docker workshop lab session (building images, multi-stage setups), as part of the Technologies of Software Development (TSD) course (2025)."
+        },
+        "categories": {
+            "Langage": [
+                "TypeScript","JavaScript"
+            ],
+            "Cloud": [
+                "Docker"
+            ]
+        }
+    },
+    "R_kgDOOaKipw": {
+        "description": {
+            "fr": "TP d'apprentissage de Ruby on Rails sous GitHub Codespaces, dans le cadre du cours de Technologies de Développement Logiciel (TSD) de 2025.",
+            "en": "Ruby on Rails starter project lab session under GitHub Codespaces, as part of the Technologies of Software Development (TSD) course (2025)."
+        },
+        "categories": {
+            "Langage": [
+                "Ruby"
+            ],
+            "Backend": [
+                "RubyOnRails"
+            ],
+            "Cloud": [
+                "Docker"
+            ]
+        }
+    },
+    "R_kgDOODOJNw": {
+        "description": {
+            "fr": "Dépôt principal du cours de Technologies de Développement Logiciel (TSD) à PUT (édition 2024).",
+            "en": "Main repository for the Technologies of Software Development (TSD) course at PUT (2024 edition)."
+        },
+        "categories": {
+            "Langage": [
+                "C#"
+            ]
+        }
+    },
+    "R_kgDOKGcs5g": {
+        "description": {
+            "fr": "Prototype d'application innovante de suivi de colis intégrant une carte interactive Leaflet, développée en Svelte (projet d'innovation académique).",
+            "en": "Innovative parcel tracking prototype featuring an interactive Leaflet map, built with Svelte (academic project)."
+        },
+        "categories": {
+            "Frontend": [
+                "Svelte",
+                "Tailwind",
+                "Leaflet"
+            ],
+            "Langage": [
+                "JavaScript"
+            ]
+        }
+    },
+    "R_kgDOMLFCfA": {
+        "description": {
+            "fr": "Application web de gestion et d'affichage de cartes de collection, intégrant l'outil Canvas Editor personnalisé.",
+            "en": "Web application for managing and displaying trading cards, integrating a custom Canvas Editor tool."
+        },
+        "categories": {
+            "Frontend": [
+                "Svelte",
+                "Tailwind",
+                "CanvasAPI"
+            ],
+            "Langage": [
+                "TypeScript","JavaScript",
+                "JavaScript"
+            ]
+        }
+    },
+    "R_kgDON2IIeQ": {
+        "description": {
+            "fr": "Quatrième TP d'Algorithmes et Complexité (AC) portant sur la conception et l'analyse d'algorithmes et rédigé en Typst.",
+            "en": "Fourth lab session of the Algorithms and Complexity (AC) course, focusing on algorithm design and documentation in Typst."
+        },
+        "categories": {
+            "Langage": [
+                "Java",
+                "Python",
+                "Typst"
+            ]
+        }
+    },
+    "R_kgDON2H22g": {
+        "description": {
+            "fr": "Dépôt des TP de Mathématiques pour l'ESIR, contenant des analyses statistiques sous R et Jupyter Notebook.",
+            "en": "Mathematics lab repository for ESIR, containing statistical analysis in R and Jupyter Notebooks."
+        },
+        "categories": {
+            "Langage": [
+                "Python",
+                "R"
+            ]
+        }
+    },
+    "R_kgDONo7y8A": {
+        "description": {
+            "fr": "Projet de compilateur complet pour le langage While (parseur avec ANTLR3, génération de code intermédiaire, compilation C++).",
+            "en": "Full compiler project for the While language, featuring parsing with ANTLR3 and intermediate C++ code generation."
+        },
+        "categories": {
+            "Langage": [
+                "Java",
+                "C++"
+            ],
+            "Tool": [
+                "ANTLR",
+                "CMake"
+            ]
+        }
+    },
+    "R_kgDOK33fTA": {
+        "description": {
+            "fr": "Projet de console d'émulation et de jeu développée pour Raspberry Pi.",
+            "en": "Emulation and gaming console project developed for Raspberry Pi."
+        },
+        "categories": {
+            "Langage": [
+                "C++",
+                "C"
+            ]
+        }
+    },
+    "R_kgDOM5t5Cw": {
+        "description": {
+            "fr": "Deuxième TP du cours de Validation et Vérification (VV) axé sur les outils d'analyse statique et le calcul de métriques logicielles complexes.",
+            "en": "Second Validation & Verification lab session focusing on static analysis tools and software complexity metrics calculation."
+        },
+        "categories": {
+            "Langage": [
+                "Java",
+                "Python"
+            ],
+            "Tool": [
+                "StaticAnalysis"
+            ]
+        }
+    },
+    "R_kgDOMxDj-A": {
+        "description": {
+            "fr": "Premier TP du cours de Validation et Vérification (VV) à l'ESIR.",
+            "en": "First lab session of the Validation and Verification (VV) course at ESIR."
+        },
+        "categories": {
+            "Langage": [
+                "Java"
+            ]
+        }
+    },
+    "R_kgDOM9w9AQ": {
+        "description": {
+            "fr": "Premier TP du cours d'Outils et Méthodes de Développement (OMD) à l'ESIR.",
+            "en": "First lab session of the Development Tools and Methods (OMD) course at ESIR."
+        },
+        "categories": {
+            "Langage": [
+                "Typst"
+            ]
+        }
+    },
+    "R_kgDON2GN_w": {
+        "description": {
+            "fr": "Projet de lycée (NSI) portant sur les travaux de Claude Shannon et la théorie de l'information.",
+            "en": "High school project (NSI) centered on Claude Shannon's work and information theory."
+        },
+        "categories": {
+            "Langage": [
+                "JavaScript",
+                "HTML"
+            ]
+        }
+    },
+    "R_kgDOIsaYMA": {
+        "description": {
+            "fr": "Configuration d'un client léger Debian pour le déploiement réseau.",
+            "en": "Configuration of a Debian thin client for network deployment."
+        },
+        "categories": {
+            "Langage": [
+                "Shell"
+            ]
+        }
+    },
+    "R_kgDOM7flQg": {
+        "description": {
+            "fr": "Troisième TP du cours de Validation et Vérification (VV) axé sur l'écriture de suites de tests JUnit, le mock avec Mockito, et l'analyse de mutation PIT.",
+            "en": "Third Validation & Verification lab session focusing on JUnit tests, mocking with Mockito, and PIT mutation testing."
+        },
+        "categories": {
+            "Langage": [
+                "Java"
+            ],
+            "Tool": [
+                "JUnit",
+                "Mockito",
+                "PIT"
             ]
         }
     }

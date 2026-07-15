@@ -26,8 +26,8 @@
     },
     "avatar": "/moi.png",
     "summary": {
-        "fr": "Étudiant curieux en 2ème année à l’ESIR, je recherche un stage de fin d’études ou un contrat de professionnalisation dans le développement web full-stack.",
-        "en": "Curious 2nd-year student at ESIR, looking for a final internship or a work-study contract in full-stack web development."
+        "fr": "Étudiant en dernière année d'école d'ingénieurs à l'ESIR (diplômé en 2026), passionné par le développement full-stack et l'IA. Recherche un premier emploi (CDI) en tant que Software Engineer ou Applied AI Engineer.",
+        "en": "Software Engineering student graduating in 2026 specializing in full-stack web development (TypeScript, React, Next.js, SvelteKit) and applied AI (LLMs, RAG, PyTorch). Practical experience building secure cloud platforms (AWS, Docker, Keycloak) and data pipelines through internships and leadership as Student Union CTO. Eager to solve real-world system architecture, observability, and AI integration challenges under mentorship at Mistral."
     },
     "languages": [
         { "name": "Français", "level": { "fr": "Natif", "en": "Native" } },

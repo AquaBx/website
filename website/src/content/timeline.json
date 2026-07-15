@@ -1,10 +1,12 @@
 [
     {
         "name": {
-            "fr": "Stage en amélioration du Pentest avec l'IA"
+            "fr": "Software Engineer - AI (Stage)",
+            "en": "AI Software Engineer (Intern)"
         },
-        "description":{
-            "fr":"• État de l'art de la concurrence sur l'intégration des LLM dans les processus de tests d’intrusion. \n• Analyse des risques sur la confidentialité des données clients.\n• Documentation d'introduction sur l'utilisation de Cursor et Temporal afin d'automatiser certaines tâches."
+        "description": {
+            "fr": "• Réalisé un état de l'art sur l'intégration des LLM dans les processus de tests d'intrusion.\n• Rédigé une documentation technique sur l'automatisation de tâches de pentest avec Cursor et Temporal, facilitant leur adoption par l'équipe.\n• Évalué les risques de confidentialité liés à l'utilisation de données clients dans des pipelines IA.",
+            "en": "• Conducted competitor state-of-the-art analysis on integrating Large Language Models (LLMs) into cybersecurity and penetration testing workflows.\n• Authored comprehensive technical documentation on automating penetration testing tasks with Cursor (AI editor) and Temporal (durable execution framework), streamlining team adoption.\n• Evaluated risks and established mitigation strategies regarding client data confidentiality and security in LLM integrations."
         },
         "location": "Niji | 35000 Rennes, France",
         "dates": [
@@ -58,8 +60,8 @@
     },
     {
         "name": {
-            "fr": "Technicien informatique (stagiaire)",
-            "en": "IT Assistant Internship"
+            "fr": "Technicien IT & Réseau (Stage)",
+            "en": "IT Infrastructure Engineer (Intern)"
         },
         "dates": [
             {
@@ -73,7 +75,7 @@
         ],
         "location": "Mairie de Pacé | 35740 Pacé, France",
         "description": {
-            "en": "Modernization of IT infrastructure\n• Installed PRTG (infrastructure monitoring)\n• Installed GLPI (ticket tracking for technical support)\n• Updated servers\n• Set up new workstations (Windows, Office 365)\n• Managed thin clients\n• Configured switches",
+            "en": "Modernization of IT infrastructure:\n• Configured 7 Aruba network switches and modernized municipality IT infrastructure.\n• Installed and configured PRTG for real-time monitoring of 50+ network devices, and GLPI to manage support tickets for 100+ municipal agents.",
             "fr": "Modernisation de l’infrastructure informatique\n• Mise en place de PRTG, améliorant la surveillance de plus de 50 équipements réseau en temps réel\n• Mise en place de GLPI pour centraliser la gestion des tickets IT de plus de 100 agents municipaux\n• Mise à jour de serveurs Windows \n• Installation d'une dizaine de nouveaux postes informatiques (Windows, Office 365)\n• Gestion et maintenance d'environ 40 clients légers.\n• Configuration de 7 nouveaux switchs réseau Aruba"
         },
         "type": "work",
@@ -84,8 +86,8 @@
     },
     {
         "name": {
-            "en": "Data Analyst Internship",
-            "fr": "Stage en analyse de données"
+            "fr": "Data & Machine Learning Engineer (Stage)",
+            "en": "Data & Machine Learning Engineer (Intern)"
         },
         "dates": [
             {
@@ -95,8 +97,8 @@
         ],
         "location": "Inria | 35000 Rennes, France",
         "description": {
-            "en": "",
-            "fr": "• Développement d’une méthodologie pour comparer et regrouper des fingerprints de navigateurs afin d’améliorer l’anonymat des utilisateurs.\n• mise en place d'une pipeline pour traiter et générer un dataset à partir de données réelles et en suivant des contraintes (feature model)\n• application du metrics learning afin de classifier et identifier les similarités entre les données"
+            "fr": "• Conçu une méthodologie de comparaison et de regroupement de fingerprints de navigateurs afin d'améliorer l'anonymat des utilisateurs.\n• Développé un pipeline de données Python pour générer des datasets complexes sous contraintes (feature models).\n• Appliqué des modèles de Metric Learning (PyTorch, scikit-learn) pour classifier et identifier des similarités de données en haute dimension.",
+            "en": "• Designed and developed a browser fingerprinting comparison and clustering methodology to enhance web user anonymity.\n• Built an ETL data pipeline using Python (Pandas) to process and generate complex datasets under multi-variable feature model constraints.\n• Applied Metric Learning techniques (PyTorch, scikit-learn) to train neural networks to classify and identify high-dimensional dataset similarities."
         },
         "type": "work",
         "tags": [
@@ -109,8 +111,8 @@
     },
     {
         "name": {
-            "en": "Chief Technology Officer",
-            "fr": "Chief Technology Officer"
+            "en": "Chief Technology Officer (Student Union)",
+            "fr": "Chief Technology Officer (BDE ISATI)"
         },
         "homepage": "https://isati.org",
         "dates": [
@@ -121,8 +123,8 @@
         ],
         "location": "ISATI | 35000 Rennes, France",
         "description": {
-            "en": "Mainly responsible for managing websites and Google Workspace",
-            "fr": "Gestion des sites web à destination des 500 étudiants de l'école et administration du Google Workspace pour les 40 membres du BDE"
+            "fr": "• Co-conçu les maquettes de la plateforme avec un graphiste et développé seul l'intégralité du site (SvelteKit, Node.js, AWS) pour 500+ étudiants.\n• Géré l'infrastructure cloud AWS et administré l'accès aux outils collaboratifs pour l'ensemble des 40+ membres du BDE.",
+            "en": "• Co-designed layout mockups with a graphic designer and independently developed the entire web platform (SvelteKit, Node.js, AWS) serving 500+ active users.\n• Maintained AWS cloud infrastructure and managed collaborative workspace tools for all 40+ student union members."
         },
         "type": "work",
         "tags": [
@@ -218,7 +220,7 @@
             "fr": "Ecole d'ingénieur"
         },
         "description": {
-            "en": "",
+            "en": "• Core coursework: Full-stack Development (Angular, NestJS), Software Architecture, Algorithmic Complexity, Artificial Intelligence, Cybersecurity.",
             "fr": "• Développement Fullstack (Angular + nestjs)\n• Design et modélisation logicielle\n• Complexité algorithmique\n• Intelligence Artificielle"
         },
         "location": "ESIR | 35000 Rennes, France",
@@ -256,7 +258,7 @@
             }
         ],
         "description": {
-            "en": "",
+            "en": "• Coursework: Web Application Frameworks (Next.js, SvelteKit), Desktop Applications (C# .NET MAUI), Software Design Patterns.",
             "fr": "• Développement Fullstack (Sveltekit, NextJS)\n• Développement application de bureau (MAUI)\n• Cybersécurité\n• Projets de groupe\n• Design et modélisation logicielle"
         },
         "type": "study"
@@ -267,7 +269,7 @@
             "fr": "CUPGE Ingénieur"
         },
         "description": {
-            "en": "",
+            "en": "• Intensive classes in Mathematics, Physics, and Computer Science (Python, PHP Full-stack).",
             "fr": "• Python\n• Développement Fullstack (PHP)"
         },
         "location": "ESIR | 35000 Rennes, France",
