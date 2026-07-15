@@ -5,7 +5,7 @@ import type { AvailableLanguageTag } from '$lib/types'
 import timelineJSON from "$content/timeline.json"
 import profileJSON from "$content/profile.json"
 import { fetchProjects } from '@website/utils'
-import { GITHUB_TOKEN } from '$env/static/private'
+import {env} from '$env/dynamic/private'
 
 export class Content {
     static projects: Record<string, any> = {}
@@ -14,7 +14,7 @@ export class Content {
         const lang = getLocale() as AvailableLanguageTag
 
         if (Content.projects[lang] === undefined) {
-            fetchProjects(GITHUB_TOKEN, lang).then((res) => {
+            fetchProjects(env.GITHUB_TOKEN, lang).then((res) => {
                 Content.projects[lang] = res
             })
             return {
