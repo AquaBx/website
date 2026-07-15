@@ -26,7 +26,7 @@
 							draggable="false"
 							{src}
 							{alt}
-							sizes="(max-width:431px) 1280px, (max-width:631px) 800px, (min-width:632px) 400px"
+							sizes="800px"
 						/>
 					{/snippet}
 					{#snippet previous(onclick)}
@@ -51,7 +51,7 @@
 					class="rounded-xl w-full max-w-80 object-cover aspect-square"
 					src={post.images[0].src}
 					alt="picture"
-					sizes="(max-width:431px) 1280px, (max-width:631px) 800px, (min-width:632px) 400px"
+					sizes="800px"
 				/>
 			{/if}
 		{/each}

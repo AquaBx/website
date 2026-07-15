@@ -9,7 +9,7 @@ async function getAll() {
 
     const images = import.meta.glob(`$content/photos/**/*`, {
         eager: true,
-        query: { enhanced: true, w: "1280; 800; 400" }
+        query: { enhanced: true, w: "800" }
     })
 
     // Map images by their filename for quick lookup
