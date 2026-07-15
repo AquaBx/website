@@ -93,7 +93,6 @@
 <div {...props} bind:clientWidth={width}>
     {@render previous(handlePrev)}
 
-    <!-- svelte-ignore a11y_no_static_element_interactions -->
     <div style="width:100%;height:100%;position:relative;overflow:hidden;" onpointerdown={mousedown} >
         {#each images as img, i2}
         {#if item_visible(i2 - spring.current, show)}
