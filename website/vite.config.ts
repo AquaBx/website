@@ -17,6 +17,14 @@ export default defineConfig({
 			project: './project.inlang',
 			outdir: './src/lib/paraglide',
 			strategy: ['url'],
-		})
+		}),
+		{
+			name: 'force-close-bundle',
+			closeBundle() {
+				setTimeout(() => {
+					process.exit(0);
+				}, 1000);
+			}
+		}
 	]
 });
