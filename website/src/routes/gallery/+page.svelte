@@ -50,8 +50,8 @@
 				<enhanced:img
 					class="rounded-xl w-full max-w-80 object-cover aspect-square"
 					src={post.images[0].src}
-					alt="picture"
-					sizes="800px"
+					alt={post.images[0].alt}
+					sizes="(max-width:431px) 1280px, (max-width:631px) 800px, (min-width:632px) 400px"
 				/>
 			{/if}
 		{/each}
