@@ -5,7 +5,7 @@ WORKDIR /build
 COPY . .
 
 RUN yarn install --frozen-lockfile
-RUN yarn build
+RUN VIPS_CONCURRENCY=1 UV_THREADPOOL_SIZE=1 NODE_OPTIONS="--max-old-space-size=1536" yarn build
 
 FROM oven/bun:alpine AS prod
 
